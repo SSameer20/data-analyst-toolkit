@@ -1,0 +1,12 @@
+{
+  "name": "data-analyst-toolkit",
+  "interface": { "displayName": "Data Analyst Toolkit" },
+  "plugins": [
+    {
+      "name": "data-analyst-toolkit",
+      "source": { "source": "local", "path": "./" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Data & Analytics"
+    }
+  ]
+}
