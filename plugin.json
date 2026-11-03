@@ -11,6 +11,8 @@
         "developerName": "Sameer Shaik",
         "displayName": "Data Analyst Copilot",
         "longDescription": "Helps analyze uploaded datasets, identify and quantify data-quality defects, generate and explain Oracle SQL, and prepare Tableau-ready metrics, calculated fields, and dashboard plans.",
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png",
         "shortDescription": "Clean data, Oracle SQL, Tableau insights"
       }
     }
@@ -24,5 +26,5 @@
     "analytics"
   ],
   "name": "data-analyst-copilot",
-  "version": "0.1.1"
+  "version": "0.1.2"
 }
