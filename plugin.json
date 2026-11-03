@@ -2,6 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "author": { "email": "sameer.kattubadi@gmail.com", "name": "Sameer Shaik" },
   "description": "An AI-powered copilot for data analysts that helps clean datasets, audit data quality, write Oracle SQL queries, analyze business data, and generate Tableau-ready insights and visualizations.",
+  "homepage": "https://ssameer20.github.io/data-analyst-plugin/",
   "extensions": {
     "com.openai": {
       "interface": {
@@ -18,7 +19,10 @@
         "longDescription": "Helps analyze uploaded datasets, identify and quantify data-quality defects, generate and explain Oracle SQL, and prepare Tableau-ready metrics, calculated fields, and dashboard plans.",
         "logo": "./assets/icon.png",
         "composerIcon": "./assets/icon.png",
-        "shortDescription": "Clean data, Oracle SQL, Tableau insights"
+        "shortDescription": "Clean data, Oracle SQL, Tableau insights",
+        "websiteURL": "https://ssameer20.github.io/data-analyst-plugin/",
+        "privacyPolicyURL": "https://ssameer20.github.io/data-analyst-plugin/privacy.html",
+        "termsOfServiceURL": "https://ssameer20.github.io/data-analyst-plugin/terms.html"
       }
     }
   },
