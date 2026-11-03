@@ -59,6 +59,22 @@ The skills do not connect to databases or inspect live BI workspaces. They can c
 | [BI Expert](skills/bi-expert/SKILL.md)                         | Build cross-platform BI dashboards and reporting deliverables in requested formats. |
 
 ## Install
+### CLI
+```
+npx skills add https://github.com/SSameer20/data-analyst-toolkit
+```
+### Install a specific skill
+```text
+npx skills add https://github.com/SSameer20/data-analyst-toolkit --skill data-cleaning
+```
+Available Sub-Skills
+
+- `bi-expert` — Business intelligence and visualization
+- `data-analyst-workflow` — End-to-end data analysis
+- `data-cleaning` — Dataset cleaning and preparation
+- `data-quality` — Data quality checks and validation
+- `feature-engineering` — Feature preparation and transformation
+- `sql-expert` — SQL queries and database analysis
 
 ### Claude Code marketplace
 
@@ -78,39 +94,16 @@ The plugin installs all six skills. To update the marketplace and plugin:
 
 ### Codex
 
-Clone the repository and copy the skills to your user-level skills directory:
 
 ```bash
-git clone https://github.com/SSameer20/data-analyst-plugin.git
-mkdir -p ~/.agents/skills
-cp -R data-analyst-plugin/skills/. ~/.agents/skills/
+# Add marketplace
+codex plugin marketplace add SSameer20/data-analyst-toolkit
+
+# Install plugin
+codex plugin add data-analyst-toolkit@data-analyst-toolkit
 ```
 
 Codex scans `~/.agents/skills/` for user skills. If the new skills do not appear, restart Codex.
-
-### Manual installation
-
-For Claude Code, copy the skill folders to its user-level skill directory:
-
-```bash
-git clone https://github.com/SSameer20/data-analyst-plugin.git
-mkdir -p ~/.claude/skills
-cp -R data-analyst-plugin/skills/. ~/.claude/skills/
-```
-
-For installation in a single project, use `.agents/skills/` for Codex or `.claude/skills/` for Claude Code inside that project instead of the user-level directory.
-
-## Usage
-
-In Claude Code, invoke an installed plugin skill by name, for example:
-
-```text
-/data-analyst-toolkit:data-cleaning
-```
-
-In Codex, use `/skills` to browse available skills or mention one directly, such as `$data-cleaning`. You can also describe your data-analysis task and let the agent choose a relevant skill.
-
-For an end-to-end request, use the Data Analyst Workflow skill. For a focused task, invoke the corresponding specialist skill.
 
 ## Repository layout
 
