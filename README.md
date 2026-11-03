@@ -32,11 +32,13 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![Website][website-shield]][website-url]
+<p align="center">
+  <a href="https://github.com/SSameer20/data-analyst-plugin/graphs/contributors"><img src="https://img.shields.io/github/contributors/SSameer20/data-analyst-plugin.svg?style=for-the-badge" alt="Contributors"></a>
+  <a href="https://github.com/SSameer20/data-analyst-plugin/network/members"><img src="https://img.shields.io/github/forks/SSameer20/data-analyst-plugin.svg?style=for-the-badge" alt="Forks"></a>
+  <a href="https://github.com/SSameer20/data-analyst-plugin/stargazers"><img src="https://img.shields.io/github/stars/SSameer20/data-analyst-plugin.svg?style=for-the-badge" alt="Stargazers"></a>
+  <a href="https://github.com/SSameer20/data-analyst-plugin/issues"><img src="https://img.shields.io/github/issues/SSameer20/data-analyst-plugin.svg?style=for-the-badge" alt="Issues"></a>
+  <a href="https://ssameer20.github.io/data-analyst-plugin/"><img src="https://img.shields.io/website?style=for-the-badge&amp;url=https%3A%2F%2Fssameer20.github.io%2Fdata-analyst-plugin%2F" alt="Website"></a>
+</p>
 
 
 ## About
