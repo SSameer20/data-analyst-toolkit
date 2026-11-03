@@ -1,22 +1,45 @@
-# Data Analyst Toolkit
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
-Practical, verifiable guidance for data analysis workflows.
+<a id="readme-top"></a>
 
-[Website](https://ssameer20.github.io/data-analyst-plugin/) · [Privacy](https://ssameer20.github.io/data-analyst-plugin/privacy.html) · [Support](https://ssameer20.github.io/data-analyst-plugin/support.html)
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-## Contents
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 
-- [About](#about)
-- [Skills](#skills)
-- [Install](#install)
-  - [Claude Code marketplace](#claude-code-marketplace)
-  - [Codex](#codex)
-  - [Manual installation](#manual-installation)
-- [Usage](#usage)
-- [Repository layout](#repository-layout)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Unlicense License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/SSameer20/data-analyst-plugin">
+    <img src="assets/icon.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Data Analyst Toolkit</h3>
+
+  <p align="center">
+    Practical, verifiable guidance for data analysis workflows.
+    <br />
+  </p>
+</div>
 
 ## About
 
@@ -26,14 +49,14 @@ The skills provide instructions and recommendations. They do not connect to data
 
 ## Skills
 
-| Skill | What it helps with |
-| --- | --- |
-| [Data Analyst Workflow](skills/data-analyst-workflow/SKILL.md) | Coordinate an end-to-end analysis across the specialist skills. |
-| [Data Quality](skills/data-quality/SKILL.md) | Define validation rules, measure data defects, and prioritize remediation. |
-| [Data Cleaning](skills/data-cleaning/SKILL.md) | Plan reproducible transformations and validate results. |
-| [Feature Engineering](skills/feature-engineering/SKILL.md) | Design analytical or machine-learning features while guarding against leakage. |
-| [SQL Expert](skills/sql-expert/SKILL.md) | Write, explain, optimize, and debug SQL; Oracle SQL is the default dialect. |
-| [Tableau Expert](skills/tableau-expert/SKILL.md) | Prepare Tableau metrics, calculations, data sources, and dashboard plans. |
+| Skill                                                          | What it helps with                                                             |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| [Data Analyst Workflow](skills/data-analyst-workflow/SKILL.md) | Coordinate an end-to-end analysis across the specialist skills.                |
+| [Data Quality](skills/data-quality/SKILL.md)                   | Define validation rules, measure data defects, and prioritize remediation.     |
+| [Data Cleaning](skills/data-cleaning/SKILL.md)                 | Plan reproducible transformations and validate results.                        |
+| [Feature Engineering](skills/feature-engineering/SKILL.md)     | Design analytical or machine-learning features while guarding against leakage. |
+| [SQL Expert](skills/sql-expert/SKILL.md)                       | Write, explain, optimize, and debug SQL; Oracle SQL is the default dialect.    |
+| [Tableau Expert](skills/tableau-expert/SKILL.md)               | Prepare Tableau metrics, calculations, data sources, and dashboard plans.      |
 
 ## Install
 
@@ -110,3 +133,13 @@ This repository does not currently include a license file. Contact the maintaine
 ## Contact
 
 For questions or support, email [sameer.kattubadi@gmail.com](mailto:sameer.kattubadi@gmail.com).
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-url]: https://linkedin.com/in/othneildrew
