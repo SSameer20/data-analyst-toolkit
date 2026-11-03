@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": { "email": "sameer.kattubadi@gmail.com", "name": "Sameer Shaik" },
+  "description": "An AI-powered copilot for data analysts that helps clean datasets, audit data quality, write Oracle SQL queries, analyze business data, and generate Tableau-ready insights and visualizations.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Productivity",
+        "defaultPrompt": "Help me clean a dataset, analyze data quality, write Oracle SQL, or prepare Tableau-ready insights.",
+        "developerName": "Sameer Shaik",
+        "displayName": "Data Analyst Copilot",
+        "longDescription": "Helps analyze uploaded datasets, identify and quantify data-quality defects, generate and explain Oracle SQL, and prepare Tableau-ready metrics, calculated fields, and dashboard plans.",
+        "shortDescription": "Clean data, Oracle SQL, Tableau insights"
+      }
+    }
+  },
+  "keywords": [
+    "data analysis",
+    "Oracle SQL",
+    "data quality",
+    "Tableau",
+    "data cleaning",
+    "analytics"
+  ],
+  "name": "Data Analyst Copilot",
+  "version": "0.1.1"
+}
