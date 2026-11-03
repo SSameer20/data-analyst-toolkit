@@ -1,9 +1,0 @@
-{
-  "name": "data-analyst-toolkit",
-  "version": "0.1.0",
-  "description": "Skills for data quality, cleaning, feature engineering, SQL, and Tableau analysis.",
-  "author": {
-    "name": "Sameer Shaik",
-    "email": "sameer.kattubadi@gmail.com"
-  }
-}
