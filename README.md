@@ -124,7 +124,7 @@ For an end-to-end request, use the Data Analyst Workflow skill. For a focused ta
 
 ## Contributing
 
-Suggestions and corrections are welcome. Open an issue to describe the proposed change, or submit a pull request with focused updates to the relevant skill or documentation.
+Suggestions and corrections are welcome. See the [contributor guide](CONTRIBUTING.md) for onboarding, good first issues, and pull request instructions, or [open an issue](https://github.com/SSameer20/data-analyst-toolkit/issues/new/choose) to discuss a proposal.
 
 ## License
 
