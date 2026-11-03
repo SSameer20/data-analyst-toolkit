@@ -1,11 +1,10 @@
-# Contributing to Data Analyst Toolkit
+# Contributing
 
 Thanks for helping improve Data Analyst Toolkit. Contributions of all sizes are welcome, including clearer instructions, corrected examples, bug fixes, and new ideas for the skills or website.
 
 ## Find something to work on
 
-- Browse [open issues labeled `good first issue`](https://github.com/SSameer20/data-analyst-toolkit/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22). The label is intended to identify approachable tasks; read the full issue and ask questions before starting if anything is unclear.
-- One currently tagged issue is [#1: Generate complete dashboard images with relevant KPIs and visualizations](https://github.com/SSameer20/data-analyst-toolkit/issues/1). Issue availability and labels can change.
+- Browse open issues labeled [good first issue](https://github.com/SSameer20/data-analyst-toolkit/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22). The label is intended to identify approachable tasks; read the full issue and ask questions before starting if anything is unclear.
 - Found a problem that is not reported? [Open an issue](https://github.com/SSameer20/data-analyst-toolkit/issues/new/choose) with what you expected, what happened, and enough context to understand it. Do not include private datasets, credentials, or personal information.
 
 If you plan to take an issue, leave a comment so others know it is being worked on. For substantial changes, open an issue or discuss your approach before investing time.
