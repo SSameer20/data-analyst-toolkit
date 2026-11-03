@@ -68,6 +68,8 @@ Open a pull request from your branch to `main` in the upstream repository. In th
 
 Keep the PR focused, respond constructively to review feedback, and make requested follow-up changes on the same branch. A maintainer will review and merge the contribution.
 
+Merged pull requests to `main` are automatically recorded in the [changelog](CHANGELOG.md), including a work summary, merge time, source branch, and GitHub usernames for the PR author and linked commit contributors.
+
 ## Community
 
 Be welcoming, respectful, and constructive in issues and reviews. Ask questions when you are unsure; first-time contributors are encouraged to participate.
