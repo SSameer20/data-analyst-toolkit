@@ -1,6 +1,20 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
 <a id="readme-top"></a>
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/SSameer20/data-analyst-plugin">
+    <img src="assets/icon.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Data Analyst Toolkit</h3>
+
+  <p align="center">
+    Practical, verifiable guidance for data analysis workflows.
+    <br />
+  </p>
+</div>
 
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
@@ -18,27 +32,12 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![Website][website-shield]][website-url]
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/SSameer20/data-analyst-plugin">
-    <img src="assets/icon.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Data Analyst Toolkit</h3>
-
-  <p align="center">
-    Practical, verifiable guidance for data analysis workflows.
-    <br />
-  </p>
-</div>
 
 ## About
 
