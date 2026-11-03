@@ -43,9 +43,9 @@
 
 ## About
 
-Data Analyst Toolkit is a collection of reusable agent skills for common data-analysis work. The skills help users assess data quality, plan cleaning steps, engineer features, write SQL, and prepare Tableau reporting.
+Data Analyst Toolkit is a collection of reusable agent skills for common data-analysis work. The skills help users assess data quality, plan cleaning steps, engineer features, write SQL, and prepare business intelligence reporting across platforms such as Tableau, Power BI, Looker, Qlik, Excel, and Google Sheets.
 
-The skills provide instructions and recommendations. They do not connect to databases, execute queries, modify datasets, or inspect live Tableau workbooks.
+The skills do not connect to databases or inspect live BI workspaces. They can create report artifacts when the host environment provides suitable tools; they do not modify source datasets. Review generated queries, formulas, and reports before using them.
 
 ## Skills
 
@@ -56,7 +56,7 @@ The skills provide instructions and recommendations. They do not connect to data
 | [Data Cleaning](skills/data-cleaning/SKILL.md)                 | Plan reproducible transformations and validate results.                        |
 | [Feature Engineering](skills/feature-engineering/SKILL.md)     | Design analytical or machine-learning features while guarding against leakage. |
 | [SQL Expert](skills/sql-expert/SKILL.md)                       | Write, explain, optimize, and debug SQL; Oracle SQL is the default dialect.    |
-| [Tableau Expert](skills/tableau-expert/SKILL.md)               | Prepare Tableau metrics, calculations, data sources, and dashboard plans.      |
+| [BI Expert](skills/bi-expert/SKILL.md)                         | Build cross-platform BI dashboards and reporting deliverables in requested formats. |
 
 ## Install
 

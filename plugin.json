@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "author": { "email": "sameer.kattubadi@gmail.com", "name": "Sameer Shaik" },
-  "description": "A data analysis toolkit for profiling dataset quality, planning reproducible cleaning, engineering analytical features, writing Oracle SQL, and preparing Tableau reports.",
+  "description": "A data analysis toolkit for profiling dataset quality, planning reproducible cleaning, engineering analytical features, writing Oracle SQL, and preparing cross-platform business intelligence reports.",
   "homepage": "https://ssameer20.github.io/data-analyst-plugin/",
   "extensions": {
     "com.openai": {
@@ -15,7 +15,7 @@
         ],
         "developerName": "Sameer Shaik",
         "displayName": "Data Analyst Toolkit",
-        "longDescription": "Helps data analysts inspect dataset quality and prepare reliable analysis. Skills cover profiling and validation, reproducible cleaning, feature engineering, Oracle SQL, and Tableau metrics and dashboards. Outputs are guidance to review; the plugin does not connect to databases or modify files.",
+        "longDescription": "Helps data analysts inspect dataset quality and prepare reliable analysis. Skills cover profiling and validation, reproducible cleaning, feature engineering, Oracle SQL, and business intelligence reporting across Tableau, Power BI, Looker, Qlik, spreadsheets, and other tools. Report files can be generated when the host environment provides suitable tools. The plugin does not connect to databases or modify source datasets.",
         "logo": "./assets/icon.png",
         "composerIcon": "./assets/icon.png",
         "shortDescription": "Data analysis toolkit",
@@ -30,7 +30,13 @@
     "data analysis",
     "Oracle SQL",
     "data quality",
+    "business intelligence",
+    "Power BI",
     "Tableau",
+    "Looker",
+    "Qlik",
+    "Excel",
+    "reporting",
     "data cleaning",
     "analytics"
   ],
