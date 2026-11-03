@@ -22,7 +22,8 @@
         "shortDescription": "Clean data, Oracle SQL, Tableau insights",
         "websiteURL": "https://ssameer20.github.io/data-analyst-plugin/",
         "privacyPolicyURL": "https://ssameer20.github.io/data-analyst-plugin/privacy.html",
-        "termsOfServiceURL": "https://ssameer20.github.io/data-analyst-plugin/terms.html"
+        "termsOfServiceURL": "https://ssameer20.github.io/data-analyst-plugin/terms.html",
+        "supportURL": "https://ssameer20.github.io/data-analyst-plugin/support.html"
       }
     }
   },
@@ -35,5 +36,5 @@
     "analytics"
   ],
   "name": "data-analyst-copilot",
-  "version": "0.1.5"
+  "version": "0.1.6"
 }
