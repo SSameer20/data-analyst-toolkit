@@ -23,8 +23,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![Unlicense License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Website][website-shield]][website-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -137,9 +136,13 @@ For questions or support, email [sameer.kattubadi@gmail.com](mailto:sameer.kattu
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[contributors-shield]: https://img.shields.io/github/contributors/SSameer20/data-analyst-plugin.svg?style=for-the-badge
+[contributors-url]: https://github.com/SSameer20/data-analyst-plugin/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/SSameer20/data-analyst-plugin.svg?style=for-the-badge
+[forks-url]: https://github.com/SSameer20/data-analyst-plugin/network/members
+[stars-shield]: https://img.shields.io/github/stars/SSameer20/data-analyst-plugin.svg?style=for-the-badge
+[stars-url]: https://github.com/SSameer20/data-analyst-plugin/stargazers
+[issues-shield]: https://img.shields.io/github/issues/SSameer20/data-analyst-plugin.svg?style=for-the-badge
+[issues-url]: https://github.com/SSameer20/data-analyst-plugin/issues
+[website-shield]: https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fssameer20.github.io%2Fdata-analyst-plugin%2F
+[website-url]: https://ssameer20.github.io/data-analyst-plugin/
