@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "author": { "email": "sameer.kattubadi@gmail.com", "name": "Sameer Shaik" },
-  "description": "A practical toolkit for data analysts to assess data quality, plan cleaning, engineer features, write Oracle SQL, and prepare Tableau reports.",
+  "description": "A data analysis toolkit for profiling dataset quality, planning reproducible cleaning, engineering analytical features, writing Oracle SQL, and preparing Tableau reports.",
   "homepage": "https://ssameer20.github.io/data-analyst-plugin/",
   "extensions": {
     "com.openai": {
@@ -15,10 +15,10 @@
         ],
         "developerName": "Sameer Shaik",
         "displayName": "Data Analyst Toolkit",
-        "longDescription": "Provides practical guidance for data-quality assessment, reproducible cleaning, feature engineering, Oracle SQL, and Tableau reporting. It explains assumptions and validation steps and does not connect to databases or modify datasets.",
+        "longDescription": "Helps data analysts inspect dataset quality and prepare reliable analysis. Skills cover profiling and validation, reproducible cleaning, feature engineering, Oracle SQL, and Tableau metrics and dashboards. Outputs are guidance to review; the plugin does not connect to databases or modify files.",
         "logo": "./assets/icon.png",
         "composerIcon": "./assets/icon.png",
-        "shortDescription": "Data Analyst Toolkit",
+        "shortDescription": "Data analysis toolkit",
         "websiteURL": "https://ssameer20.github.io/data-analyst-plugin/",
         "privacyPolicyURL": "https://ssameer20.github.io/data-analyst-plugin/privacy.html",
         "termsOfServiceURL": "https://ssameer20.github.io/data-analyst-plugin/terms.html",
