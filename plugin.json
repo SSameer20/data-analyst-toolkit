@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "author": { "email": "sameer.kattubadi@gmail.com", "name": "Sameer Shaik" },
-  "description": "An AI-powered copilot for data analysts that helps clean datasets, audit data quality, write Oracle SQL queries, analyze business data, and generate Tableau-ready insights and visualizations.",
+  "description": "A practical toolkit for data analysts to assess data quality, plan cleaning, engineer features, write Oracle SQL, and prepare Tableau reports.",
   "homepage": "https://ssameer20.github.io/data-analyst-plugin/",
   "extensions": {
     "com.openai": {
@@ -9,17 +9,16 @@
         "capabilities": [],
         "category": "Productivity",
         "defaultPrompt": [
-          "Audit this dataset for missing values, duplicate keys, invalid ranges, and inconsistencies; quantify the findings.",
-          "Help me clean this dataset while preserving the original and validating the changes.",
-          "Write an Oracle SQL query for this analysis using the schema and business rules I provide.",
-          "Prepare Tableau KPI definitions and a dashboard plan for this business question."
+          "Audit this dataset for quality issues and report counts with clear denominators.",
+          "Plan reproducible cleaning steps for this dataset and explain how to validate the results.",
+          "Write an Oracle SQL query for this analysis using the schema and business rules I provide."
         ],
         "developerName": "Sameer Shaik",
-        "displayName": "Data Analyst Copilot",
-        "longDescription": "Helps analyze uploaded datasets, identify and quantify data-quality defects, generate and explain Oracle SQL, and prepare Tableau-ready metrics, calculated fields, and dashboard plans.",
+        "displayName": "Data Analyst Toolkit",
+        "longDescription": "Provides practical guidance for data-quality assessment, reproducible cleaning, feature engineering, Oracle SQL, and Tableau reporting. It explains assumptions and validation steps and does not connect to databases or modify datasets.",
         "logo": "./assets/icon.png",
         "composerIcon": "./assets/icon.png",
-        "shortDescription": "Clean data, Oracle SQL, Tableau insights",
+        "shortDescription": "Data Analyst Toolkit",
         "websiteURL": "https://ssameer20.github.io/data-analyst-plugin/",
         "privacyPolicyURL": "https://ssameer20.github.io/data-analyst-plugin/privacy.html",
         "termsOfServiceURL": "https://ssameer20.github.io/data-analyst-plugin/terms.html",
@@ -35,6 +34,6 @@
     "data cleaning",
     "analytics"
   ],
-  "name": "data-analyst-copilot",
-  "version": "0.1.6"
+  "name": "data-analyst-toolkit",
+  "version": "0.1.7"
 }

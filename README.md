@@ -1,10 +1,10 @@
-# Data Analyst Copilot
+# Data Analyst Toolkit
 
 Practical guidance for careful, checkable data analysis.
 
 ## What it does
 
-Data Analyst Copilot provides focused skills to help plan and explain data workflows, from quality checks and cleaning to SQL and Tableau reporting. It offers guidance and examples; it does not connect to databases or modify datasets.
+Data Analyst Toolkit provides focused skills to help plan and explain data workflows, from quality checks and cleaning to SQL and Tableau reporting. It offers guidance and examples; it does not connect to databases or modify datasets.
 
 ## Skills
 
