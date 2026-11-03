@@ -1,0 +1,14 @@
+{
+  "name": "data-analyst-skills",
+  "description": "Data analysis skills for Claude Code.",
+  "owner": {
+    "name": "Sameer Shaik"
+  },
+  "plugins": [
+    {
+      "name": "data-analyst-toolkit",
+      "source": "./",
+      "description": "Skills for data quality, cleaning, feature engineering, SQL, and Tableau analysis."
+    }
+  ]
+}
