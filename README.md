@@ -124,11 +124,11 @@ For an end-to-end request, use the Data Analyst Workflow skill. For a focused ta
 
 ## Contributing
 
-Suggestions and corrections are welcome. Open an issue to describe the proposed change, or submit a pull request with focused updates to the relevant skill or documentation.
+Suggestions and corrections are welcome. See the [contributor guide](CONTRIBUTING.md) for onboarding, good first issues, and pull request instructions, and follow our [Code of Conduct](CODE_OF_CONDUCT.md). You can also [open an issue](https://github.com/SSameer20/data-analyst-toolkit/issues/new/choose) to discuss a proposal.
 
 ## License
 
-This repository does not currently include a license file. Contact the maintainer before redistributing or reusing its contents.
+This project is distributed under the [MIT License](LICENSE).
 
 ## Contact
 
