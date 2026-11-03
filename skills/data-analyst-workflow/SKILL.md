@@ -25,3 +25,10 @@ For a focused request, load only the matching skill. For a broad request, load e
 6. Validate that assumptions, grain, and metrics remain consistent across the results.
 
 Skip irrelevant phases. Carry decisions and assumptions forward between skills, and present one coherent result rather than separate, repetitive instructions. Each specialist skill owns its detailed workflow, safety requirements, and output guidance.
+
+## Privacy baseline
+
+- Use only the data and context the user explicitly provides for the requested analysis. Do not solicit unrelated personal or confidential information.
+- Do not solicit or process payment-card data subject to PCI DSS, protected health information, government identifiers, or authentication credentials and secrets. If supplied data contains these fields, ask the user to remove or mask them before analysis.
+- Process other sensitive or special-category personal data only when it is strictly necessary for the stated task, legally adequate consent is confirmed, and the user was explicitly informed before providing it. Otherwise, ask the user to remove or mask it.
+- Avoid reproducing personal or confidential values in responses.

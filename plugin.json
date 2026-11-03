@@ -7,7 +7,12 @@
       "interface": {
         "capabilities": [],
         "category": "Productivity",
-        "defaultPrompt": "Help me clean a dataset, analyze data quality, write Oracle SQL, or prepare Tableau-ready insights.",
+        "defaultPrompt": [
+          "Audit this dataset for missing values, duplicate keys, invalid ranges, and inconsistencies; quantify the findings.",
+          "Help me clean this dataset while preserving the original and validating the changes.",
+          "Write an Oracle SQL query for this analysis using the schema and business rules I provide.",
+          "Prepare Tableau KPI definitions and a dashboard plan for this business question."
+        ],
         "developerName": "Sameer Shaik",
         "displayName": "Data Analyst Copilot",
         "longDescription": "Helps analyze uploaded datasets, identify and quantify data-quality defects, generate and explain Oracle SQL, and prepare Tableau-ready metrics, calculated fields, and dashboard plans.",
