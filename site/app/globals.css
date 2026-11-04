@@ -50,8 +50,8 @@ button { color: inherit; font: inherit; }
 .site-header nav a { min-height: 44px; display: inline-flex; align-items: center; }
 .site-header nav a, .site-footer a, .header-action { transition: color 160ms ease; }
 .site-header nav a:hover, .site-footer a:hover { color: var(--ink); }
-.header-action { justify-self: end; min-height: 42px; display: inline-flex; align-items: center; gap: 9px; padding: 0 12px; border: 1px solid var(--accent); background: var(--accent); color: #fff; font-size: 13px; font-weight: 600; }
-.site-header .header-action:hover { background: #2c6532; color: #fff; }
+.header-action { justify-self: end; min-height: 42px; display: inline-flex; align-items: center; gap: 9px; padding: 0 12px; border: 1px solid #24292f; background: #24292f; color: #fff; font-size: 13px; font-weight: 600; }
+.site-header .header-action:hover { border-color: #343a40; background: #343a40; color: #fff; }
 .header-action svg { width: 16px; height: 16px; }
 .star-count { margin-left: 2px; padding-left: 9px; border-left: 1px solid rgb(255 255 255 / 45%); font-variant-numeric: tabular-nums; }
 
