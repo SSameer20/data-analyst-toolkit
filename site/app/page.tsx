@@ -10,21 +10,36 @@ export default function Home() {
       <section className="hero wrap">
         <div className="hero-copy">
           <h1>Clearer analysis.</h1>
-          <p className="hero-lede">Six focused skills for the work behind trustworthy data: quality, cleaning, SQL, feature engineering, and BI reporting.</p>
+          <p className="hero-lede">Six focused skills for the work behind trustworthy data.</p>
           <div className="hero-actions">
             <a className="button" href="#skills">Browse skills <ArrowIcon /></a>
             <GitHubLink compact />
           </div>
           <p className="hero-note">Reusable guidance for your AI workspace.</p>
         </div>
-        <div className="hero-visual" data-ui aria-label="Example quality review">
-          <div className="visual-label"><span>Example output</span><span>Quality review</span></div>
-          <div className="quality-title"><span className="quality-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><div><strong>Customer records</strong><span>Validation summary</span></div></div>
+        <nav className="atlas-route" aria-label="Analysis route and toolkit skills">
+          <div className="atlas-stage">
+            <h2>Understand</h2>
+            <ul><li><a href="#skills">Data Analyst Workflow</a></li></ul>
+          </div>
+          <div className="atlas-stage">
+            <h2>Prepare</h2>
+            <ul><li><a href="#skills">Data Quality</a></li><li><a href="#skills">Data Cleaning</a></li></ul>
+          </div>
+          <div className="atlas-stage">
+            <h2>Analyze</h2>
+            <ul><li><a href="#skills">Feature Engineering</a></li><li><a href="#skills">SQL Expert</a></li></ul>
+          </div>
+          <div className="atlas-stage">
+            <h2>Communicate</h2>
+            <ul><li><a href="#skills">BI Expert</a></li></ul>
+          </div>
+        </nav>
+        <div className="hero-visual" data-ui role="group" aria-labelledby="quality-review-heading">
+          <div className="quality-title"><div><strong id="quality-review-heading">Example quality review</strong></div></div>
           <div className="quality-row"><span>Unique customer ID</span><span className="status status-good">Passed</span></div>
           <div className="quality-row"><span>Required order date</span><span className="status status-review">Review</span></div>
           <div className="quality-row"><span>Revenue range</span><span className="status status-good">Passed</span></div>
-          <div className="quality-foot"><span className="quality-bar"><i /></span><span>Review exceptions before reporting</span></div>
-          <span className="visual-side-note">A practical review starts with a clear rule.</span>
         </div>
       </section>
 
@@ -43,12 +58,12 @@ export default function Home() {
             <p>The workflow skill routes each phase to a specialist and carries decisions forward, from the first data checks to the final report.</p>
             <a className="light-link" href="https://github.com/SSameer20/data-analyst-toolkit/tree/main/skills/data-analyst-workflow">Explore the workflow skill <span aria-hidden="true">↗</span></a>
           </div>
-          <div className="flow-graphic" aria-label="Analysis phases">
+          <div className="flow-graphic" role="list" aria-label="Analysis phases">
             <div className="flow-line" aria-hidden="true"><i/><i/><i/><i/></div>
-            <div className="flow-item"><span>Understand</span><strong>Frame the question</strong></div>
-            <div className="flow-item"><span>Prepare</span><strong>Check and clean</strong></div>
-            <div className="flow-item"><span>Analyze</span><strong>Query and engineer</strong></div>
-            <div className="flow-item"><span>Communicate</span><strong>Report with context</strong></div>
+            <div className="flow-item" role="listitem"><span>Understand</span><strong>Frame the question</strong></div>
+            <div className="flow-item" role="listitem"><span>Prepare</span><strong>Check and clean</strong></div>
+            <div className="flow-item" role="listitem"><span>Analyze</span><strong>Query and engineer</strong></div>
+            <div className="flow-item" role="listitem"><span>Communicate</span><strong>Report with context</strong></div>
           </div>
         </div>
       </section>

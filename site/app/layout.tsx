@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Data Analyst Toolkit",
     description: "Practical, reusable guidance for data analysis workflows.",
     type: "website",
-    images: [{ url: "/social-media-preview.jpg", width: 1241, height: 620, alt: "Data Analyst Toolkit skills and analysis workflow" }],
+    images: [{ url: "/social-media-preview.jpg", width: 1241, height: 620, alt: "Data Analyst Toolkit analysis route and six skills" }],
   },
   twitter: {
     card: "summary_large_image",
