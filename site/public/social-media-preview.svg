@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1241" height="620" viewBox="0 0 1241 620">
+  <rect width="1241" height="620" fill="#f4f2eb"/>
+  <g fill="#397b3d">
+    <path d="M70 67h12V48H70zm18 0h12V34H88zm18 0h12V20h-12z"/>
+  </g>
+  <text x="126" y="55" fill="#22251f" font-family="Arial, sans-serif" font-size="29" font-weight="700">Data Analyst Toolkit</text>
+  <text x="70" y="177" fill="#22251f" font-family="Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="-3">Clearer analysis.</text>
+  <text x="74" y="222" fill="#555b52" font-family="Arial, sans-serif" font-size="27">Six focused skills for the work behind trustworthy data.</text>
+  <rect x="73" y="254" width="183" height="52" rx="3" fill="#397b3d"/>
+  <text x="97" y="288" fill="#fff" font-family="Arial, sans-serif" font-size="20" font-weight="700">Browse skills</text>
+  <text x="288" y="287" fill="#22251f" font-family="Arial, sans-serif" font-size="20">Install</text>
+  <text x="379" y="287" fill="#22251f" font-family="Arial, sans-serif" font-size="20">GitHub</text>
+  <path d="M74 362h1090" stroke="#b7c9ad" stroke-width="4"/>
+  <g fill="#f4f2eb" stroke="#397b3d" stroke-width="4">
+    <circle cx="105" cy="362" r="10"/><circle cx="398" cy="362" r="10"/><circle cx="705" cy="362" r="10"/><circle cx="1036" cy="362" r="10"/>
+  </g>
+  <g fill="#22251f" font-family="Arial, sans-serif">
+    <text x="75" y="407" font-size="22" font-weight="700">Understand</text>
+    <text x="75" y="440" font-size="17">Data Analyst Workflow</text>
+    <text x="365" y="407" font-size="22" font-weight="700">Prepare</text>
+    <text x="365" y="440" font-size="17">Data Quality</text>
+    <text x="365" y="466" font-size="17">Data Cleaning</text>
+    <text x="674" y="407" font-size="22" font-weight="700">Analyze</text>
+    <text x="674" y="440" font-size="17">Feature Engineering</text>
+    <text x="674" y="466" font-size="17">SQL Expert</text>
+    <text x="1005" y="407" font-size="22" font-weight="700">Communicate</text>
+    <text x="1005" y="440" font-size="17">BI Expert</text>
+  </g>
+  <path d="M75 501h1090" stroke="#d8d5ca"/>
+  <text x="75" y="544" fill="#22251f" font-family="Arial, sans-serif" font-size="21" font-weight="700">Example quality review</text>
+  <g fill="#555b52" font-family="Arial, sans-serif" font-size="16">
+    <text x="75" y="578">Unique customer ID</text><text x="415" y="578" fill="#34723c">Passed</text>
+    <text x="560" y="578">Required order date</text><text x="885" y="578" fill="#805900">Review</text>
+    <text x="1000" y="578">Revenue range</text><text x="1150" y="578" fill="#34723c">Passed</text>
+  </g>
+</svg>
