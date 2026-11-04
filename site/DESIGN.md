@@ -22,6 +22,8 @@ Typography uses a clear sans-serif system stack. Headings are compact and high c
 ## Components and behavior
 
 - The header keeps Skills, Install, and GitHub available across viewports; About, Support, and Privacy remain in the footer.
+- Installation guidance is split into Claude Code and Codex sections with platform-specific commands.
+- Every command snippet has a clipboard button with copied and failure announcements.
 - The atlas route maps Understand, Prepare, Analyze, and Communicate to the six named skills.
 - The skill explorer remains keyboard-operable with tabs and arrow-key navigation.
 - Reduced-motion preferences remove decorative transitions and the detail-panel entrance while preserving selection changes.

@@ -139,14 +139,24 @@ h1, h2, h3, p { margin-top: 0; }
 .flow-item span { color: var(--muted); font-size: 12px; }
 .flow-item strong { font-size: 14px; font-weight: 500; }
 
-.install-section { display: grid; grid-template-columns: 0.85fr 1fr; align-items: center; gap: 9vw; padding-top: 145px; padding-bottom: 145px; }
-.install-copy { max-width: 520px; }
+.install-section { display: block; padding-top: 110px; padding-bottom: 110px; }
+.install-copy { max-width: 760px; }
 .install-copy > p:last-child { max-width: 45ch; margin: 22px 0 0; color: var(--muted); }
-.install-panel { padding: clamp(24px, 3vw, 38px); background: var(--surface); }
-.install-panel-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 25px; color: var(--muted); font-size: 13px; }
-.terminal-mark { color: var(--accent); font-weight: 600; }
-.install-panel code { display: block; padding: 19px; background: #eeece4; color: #343b32; font-size: 13px; line-height: 1.65; overflow-wrap: anywhere; }
-.install-panel code span { color: var(--green); }
+.install-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(30px, 7vw, 96px); margin-top: 48px; }
+.install-panel { min-width: 0; padding-top: 22px; border-top: 1px solid var(--line); }
+.install-panel h3 { margin: 0 0 8px; font-size: 25px; font-weight: 600; letter-spacing: -0.035em; }
+.install-method { margin: 0 0 24px; color: var(--muted); font-size: 14px; }
+.install-command { display: grid; gap: 8px; margin-top: 19px; }
+.install-command > span, .install-updates h4 { margin: 0; color: var(--muted); font-size: 12px; font-weight: 600; }
+.copy-code { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 38px; align-items: stretch; gap: 6px; min-width: 0; }
+.copy-code code { display: block; min-width: 0; padding: 12px 14px; background: #eeece4; color: #343b32; font-size: 13px; line-height: 1.55; overflow-wrap: anywhere; white-space: normal; }
+.copy-button { display: grid; width: 38px; min-height: 40px; place-items: center; align-self: start; padding: 0; border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; }
+.copy-button:hover { border-color: var(--accent); color: var(--accent); }
+.copy-button svg { width: 17px; height: 17px; }
+.copy-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); }
+.install-note { margin: 17px 0 0; color: var(--muted); font-size: 13px; }
+.install-updates { display: grid; gap: 8px; margin-top: 24px; padding-top: 17px; border-top: 1px solid var(--line); }
+.install-resource { margin-top: 30px; }
 .repo-link { display: inline-flex; align-items: center; gap: 10px; margin-top: 22px; color: var(--muted); font-size: 13px; }
 .repo-link:hover { color: var(--ink); }
 .repo-link svg { width: 17px; height: 17px; }
@@ -198,7 +208,8 @@ h1, h2, h3, p { margin-top: 0; }
   .skill-detail { padding: 30px 24px; }
   .skill-detail ul { grid-template-columns: 1fr; gap: 8px; }
   .workflow { grid-template-columns: 1fr; gap: 45px; padding-block: 78px; }
-  .install-section { grid-template-columns: 1fr; gap: 35px; padding-block: 100px; }
+  .install-section { padding-block: 85px; }
+  .install-options { grid-template-columns: 1fr; gap: 42px; margin-top: 36px; }
   .trust-section { grid-template-columns: 45px 1fr; }
   .trust-link { grid-column: 2; }
   .document-page { padding-top: 75px; padding-bottom: 80px; }
@@ -247,8 +258,8 @@ h1, h2, h3, p { margin-top: 0; }
   .flow-item { grid-template-columns: 92px 1fr; min-height: 56px; gap: 10px; padding-inline: 12px; }
   .flow-item strong { font-size: 12px; }
   .flow-item span { font-size: 11px; }
-  .install-panel { padding: 22px 18px; }
-  .install-panel code { padding: 16px 12px; font-size: 11px; }
+  .install-section { padding-block: 70px; }
+  .install-panel code { padding: 12px; font-size: 12px; }
   .trust-section { grid-template-columns: 34px 1fr; gap: 13px; padding-bottom: 75px; }
   .trust-mark { width: 32px; height: 32px; }
   .trust-copy h2 { font-size: 25px; }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import CopyCode from "./copy-code";
 
 const repository = "https://github.com/SSameer20/data-analyst-toolkit";
 
@@ -125,7 +126,7 @@ export default function SkillExplorer() {
         <ul>{active.tasks.map((task) => <li key={task}>{task}</li>)}</ul>
         <div className="detail-actions">
           <a className="detail-button" href={`${repository}/tree/main/skills/${active.slug}`}>Read skill <span aria-hidden="true">↗</span></a>
-          <code>npx skills add SSameer20/data-analyst-toolkit --skill {active.slug}</code>
+          <CopyCode text={`npx skills add SSameer20/data-analyst-toolkit --skill ${active.slug}`} />
         </div>
       </section>
     </div>

@@ -1,4 +1,5 @@
 import SkillExplorer, { GitHubLink } from "./components/skill-explorer";
+import CopyCode from "./components/copy-code";
 
 function ArrowIcon() {
   return <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>;
@@ -70,12 +71,30 @@ export default function Home() {
 
       <section className="install-section wrap" id="install">
         <div className="install-copy">
-          <h2>Bring the skills to your workflow.</h2>
-          <p>Install the full toolkit, or add just the specialist you need. It’s open source under the MIT License.</p>
+          <h2>Install the toolkit.</h2>
+          <p>Choose your agent environment to add the Data Analyst Toolkit plugin.</p>
         </div>
-        <div className="install-panel">
-          <div className="install-panel-head"><span>Install all skills</span><span className="terminal-mark" aria-hidden="true">&gt;_</span></div>
-          <code><span>$</span> npx skills add<br/> &nbsp; https://github.com/SSameer20/<br/> &nbsp; data-analyst-toolkit</code>
+        <div className="install-options">
+          <section className="install-panel" aria-labelledby="claude-install-title">
+            <h3 id="claude-install-title">Claude Code</h3>
+            <p className="install-method">Add the marketplace, then install the plugin.</p>
+            <div className="install-command"><span>1. Add marketplace</span><CopyCode text="/plugin marketplace add SSameer20/data-analyst-plugin" /></div>
+            <div className="install-command"><span>2. Install plugin</span><CopyCode text="/plugin install data-analyst-toolkit@data-analyst-skills" /></div>
+            <p className="install-note">The plugin installs all six skills.</p>
+            <div className="install-updates">
+              <h4>Update</h4>
+              <CopyCode text="/plugin marketplace update data-analyst-skills" />
+              <CopyCode text="/plugin update data-analyst-toolkit@data-analyst-skills" />
+            </div>
+          </section>
+          <section className="install-panel" aria-labelledby="codex-install-title">
+            <h3 id="codex-install-title">Codex</h3>
+            <p className="install-method">Add the marketplace, then install the plugin.</p>
+            <div className="install-command"><span>1. Add marketplace</span><CopyCode text="codex plugin marketplace add SSameer20/data-analyst-toolkit" /></div>
+            <div className="install-command"><span>2. Install plugin</span><CopyCode text="codex plugin add data-analyst-toolkit@data-analyst-toolkit" /></div>
+          </section>
+        </div>
+        <div className="install-resource">
           <a href="https://github.com/SSameer20/data-analyst-toolkit" className="repo-link"><GitHubMark />Browse the repository <span aria-hidden="true">↗</span></a>
         </div>
       </section>
