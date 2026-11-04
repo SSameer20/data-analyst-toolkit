@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ssameer20.github.io/data-analyst-plugin/"),
   title: "Data Analyst Toolkit — Practical skills for better analysis",
   description: "Reusable skills for data quality, cleaning, feature engineering, SQL, and business intelligence reporting.",
-  icons: { icon: "/icon.png" },
+  icons: { icon: "/icon.svg" },
   openGraph: {
     title: "Data Analyst Toolkit",
     description: "Practical, reusable guidance for data analysis workflows.",
