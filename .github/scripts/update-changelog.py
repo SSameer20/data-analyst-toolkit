@@ -82,38 +82,27 @@ def main() -> None:
     author = pull_request["user"]["login"]
 
     title = escape_markdown(pull_request["title"])
-    branch = pull_request["head"]["ref"].replace("`", r"\`")
     description = short_description(pull_request.get("body") or "", pull_request["title"])
     description = escape_markdown(description)
     merged_at = datetime.fromisoformat(
         pull_request["merged_at"].replace("Z", "+00:00")
     ).astimezone(timezone.utc)
     date = merged_at.strftime("%Y-%m-%d")
-    time = merged_at.strftime("%H:%M UTC")
-    number = pull_request["number"]
-    author_roles = "PR author"
-    if author in usernames:
-        author_roles += ", commit author/committer"
-    participants = f"@{escape_markdown(author)} ({author_roles})"
-    other_usernames = [username for username in usernames if username != author]
-    if other_usernames:
-        contributors = ", ".join(
-            f"@{escape_markdown(username)}" for username in other_usernames
-        )
-        participants += f"; {contributors} (commit authors/committers)"
+    participants = ", ".join(
+        f"@{escape_markdown(username)}"
+        for username in [author, *(username for username in usernames if username != author)]
+    )
     if has_unlinked_identity:
         participants += (
-            "; one or more commit author/committer identities are not linked "
-            "to a GitHub username"
+            " (some commit author/committer identities are not linked "
+            "to a GitHub username)"
         )
 
     entry = (
-        f"## {date}\n\n"
-        f"- **Branch:** `{branch}` ([PR #{number}]({url}))\n"
-        f"  **Work summary:** {description}\n"
-        f"  **Merged:** {date} {time}\n"
-        f"  **Users:** {participants}\n"
-        f"  **PR title:** {title}\n\n"
+        f"<!-- changelog-source: {url} -->\n"
+        f"- **Title:** {title}\n"
+        f"  **Summary:** {description}\n"
+        f"  **Authors participated:** {participants}\n\n"
     )
     lines = changelog.splitlines(keepends=True)
     marker = "<!-- changelog entries -->"
@@ -124,7 +113,15 @@ def main() -> None:
     if marker_index is None:
         raise ValueError(f"{changelog_path} is missing the {marker} marker")
 
-    lines.insert(marker_index + 1, f"\n{entry}")
+    date_heading = f"## {date}"
+    date_index = next(
+        (index for index, line in enumerate(lines) if line.strip() == date_heading),
+        None,
+    )
+    if date_index is None:
+        lines.insert(marker_index + 1, f"\n{date_heading}\n\n{entry}")
+    else:
+        lines.insert(date_index + 2, entry)
     changelog_path.write_text("".join(lines), encoding="utf-8")
 
 
