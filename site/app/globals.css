@@ -45,7 +45,7 @@ button { color: inherit; font: inherit; }
   font-size: 14px;
 }
 .wordmark { display: inline-flex; align-items: center; gap: 10px; width: fit-content; font-size: 15px; font-weight: 600; letter-spacing: -0.025em; }
-.wordmark::before { content: "D"; display: grid; width: 25px; height: 25px; place-items: center; background: var(--accent); color: var(--accent-ink); font-size: 14px; font-weight: 700; }
+.wordmark img { width: 30px; height: 30px; object-fit: contain; }
 .site-header nav { display: flex; align-items: center; gap: clamp(18px, 3vw, 42px); color: var(--muted); }
 .site-header nav a, .site-footer a, .header-action { transition: color 160ms ease; }
 .site-header nav a:hover, .site-footer a:hover, .header-action:hover { color: var(--ink); }
@@ -210,7 +210,7 @@ h1, h2, h3, p { margin-top: 0; }
   body { font-size: 16px; }
   .site-header { min-height: 70px; gap: 10px; }
   .wordmark { font-size: 13px; }
-  .wordmark::before { width: 23px; height: 23px; }
+  .wordmark img { width: 26px; height: 26px; }
   .header-action { gap: 6px; font-size: 12px; }
   .header-action svg { width: 16px; height: 16px; }
   .hero { gap: 44px; padding-top: 55px; padding-bottom: 78px; }
