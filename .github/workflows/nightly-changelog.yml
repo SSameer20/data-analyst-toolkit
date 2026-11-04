@@ -1,0 +1,53 @@
+name: Nightly changelog catch-up
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  update-changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Add recent merged pull requests
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/update-nightly-changelog.py CHANGELOG.md
+
+      - name: Commit changelog update
+        run: |
+          if git diff --quiet -- CHANGELOG.md; then
+            echo "Changelog is already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add CHANGELOG.md
+          for attempt in 1 2 3; do
+            git add CHANGELOG.md
+            git commit -m "docs: nightly changelog update"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              exit 1
+            fi
+
+            git fetch origin main
+            git switch --detach origin/main
+            python3 .github/scripts/update-nightly-changelog.py CHANGELOG.md
+            if git diff --quiet -- CHANGELOG.md; then
+              echo "Changelog is already up to date."
+              exit 0
+            fi
+          done

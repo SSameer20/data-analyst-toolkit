@@ -68,7 +68,7 @@ Open a pull request from your branch to `main` in the upstream repository. In th
 
 Keep the PR focused, respond constructively to review feedback, and make requested follow-up changes on the same branch. A maintainer will review and merge the contribution.
 
-Merged pull requests to `main` are automatically recorded in the [changelog](CHANGELOG.md), including a work summary, merge time, source branch, and GitHub usernames for the PR author and linked commit contributors.
+Merged pull requests to `main` are automatically recorded in the [changelog](CHANGELOG.md), including a work summary, merge time, source branch, and GitHub usernames for the PR author and linked commit contributors. A nightly catch-up job also checks the previous 48 hours for missed entries.
 
 ## Community
 
