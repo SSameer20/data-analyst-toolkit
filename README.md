@@ -1,6 +1,7 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
 <a id="readme-top"></a>
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -40,7 +41,6 @@
   <a href="https://ssameer20.github.io/data-analyst-plugin/"><img src="https://img.shields.io/website?style=for-the-badge&amp;url=https%3A%2F%2Fssameer20.github.io%2Fdata-analyst-toolkit%2F" alt="Website"></a>
 </p>
 
-
 ## About
 
 Data Analyst Toolkit is a collection of reusable agent skills for common data-analysis work. The skills help users assess data quality, plan cleaning steps, engineer features, write SQL, and prepare business intelligence reporting across platforms such as Tableau, Power BI, Looker, Qlik, Excel, and Google Sheets.
@@ -49,24 +49,29 @@ The skills do not connect to databases or inspect live BI workspaces. They can c
 
 ## Skills
 
-| Skill                                                          | What it helps with                                                             |
-| -------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| [Data Analyst Workflow](skills/data-analyst-workflow/SKILL.md) | Coordinate an end-to-end analysis across the specialist skills.                |
-| [Data Quality](skills/data-quality/SKILL.md)                   | Define validation rules, measure data defects, and prioritize remediation.     |
-| [Data Cleaning](skills/data-cleaning/SKILL.md)                 | Plan reproducible transformations and validate results.                        |
-| [Feature Engineering](skills/feature-engineering/SKILL.md)     | Design analytical or machine-learning features while guarding against leakage. |
-| [SQL Expert](skills/sql-expert/SKILL.md)                       | Write, explain, optimize, and debug SQL; Oracle SQL is the default dialect.    |
+| Skill                                                          | What it helps with                                                                  |
+| -------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [Data Analyst Workflow](skills/data-analyst-workflow/SKILL.md) | Coordinate an end-to-end analysis across the specialist skills.                     |
+| [Data Quality](skills/data-quality/SKILL.md)                   | Define validation rules, measure data defects, and prioritize remediation.          |
+| [Data Cleaning](skills/data-cleaning/SKILL.md)                 | Plan reproducible transformations and validate results.                             |
+| [Feature Engineering](skills/feature-engineering/SKILL.md)     | Design analytical or machine-learning features while guarding against leakage.      |
+| [SQL Expert](skills/sql-expert/SKILL.md)                       | Write, explain, optimize, and debug SQL; Oracle SQL is the default dialect.         |
 | [BI Expert](skills/bi-expert/SKILL.md)                         | Build cross-platform BI dashboards and reporting deliverables in requested formats. |
 
 ## Install
+
 ### CLI
+
 ```
 npx skills add https://github.com/SSameer20/data-analyst-toolkit
 ```
+
 ### Install a specific skill
+
 ```text
 npx skills add https://github.com/SSameer20/data-analyst-toolkit --skill data-cleaning
 ```
+
 Available Sub-Skills
 
 - `bi-expert` — Business intelligence and visualization
@@ -93,7 +98,6 @@ The plugin installs all six skills. To update the marketplace and plugin:
 ```
 
 ### Codex
-
 
 ```bash
 # Add marketplace
@@ -139,4 +143,4 @@ For questions or support, email [sameer.kattubadi@gmail.com](mailto:sameer.kattu
 [issues-shield]: https://img.shields.io/github/issues/SSameer20/data-analyst-plugin.svg?style=for-the-badge
 [issues-url]: https://github.com/SSameer20/data-analyst-plugin/issues
 [website-shield]: https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fssameer20.github.io%2Fdata-analyst-plugin%2F
-[website-url]: https://ssameer20.github.io/data-analyst-plugin/
+[website-url]: https://data-analyst-toolkit.sameerdev.website/
