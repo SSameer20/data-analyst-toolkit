@@ -1,17 +1,16 @@
-import Link from "next/link";
 import Image from "next/image";
 import GitHubStarLink from "./github-star-link";
 
 export function SiteHeader() {
   return (
     <header className="site-header wrap">
-      <Link className="wordmark" href="/">
+      <a className="wordmark" href="/">
         <Image src="/icon.png" alt="" width={30} height={30} priority />
         <span>Data Analyst Toolkit</span>
-      </Link>
+      </a>
       <nav aria-label="Main navigation">
-        <Link href="/#skills">Skills</Link>
-        <Link href="/#install">Install</Link>
+        <a href="/#skills">Skills</a>
+        <a href="/#install">Install</a>
       </nav>
       <GitHubStarLink />
     </header>
@@ -22,7 +21,7 @@ export function SiteFooter() {
   return (
     <footer className="site-footer wrap">
       <span>Practical guidance for data analysis.</span>
-      <div><Link href="/about">About</Link><Link href="/support">Support</Link><Link href="/privacy">Privacy</Link></div>
+      <div><a href="/about">About</a><a href="/support">Support</a><a href="/privacy">Privacy</a></div>
       <span>Data Analyst Toolkit</span>
     </footer>
   );
