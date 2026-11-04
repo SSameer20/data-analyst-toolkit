@@ -49,10 +49,11 @@ button { color: inherit; font: inherit; }
 .site-header nav { display: flex; align-items: center; gap: clamp(18px, 3vw, 42px); color: var(--muted); }
 .site-header nav a { min-height: 44px; display: inline-flex; align-items: center; }
 .site-header nav a, .site-footer a, .header-action { transition: color 160ms ease; }
-.site-header nav a:hover, .site-footer a:hover, .header-action:hover { color: var(--ink); }
-.header-action { justify-self: end; display: inline-flex; align-items: center; gap: 9px; color: var(--ink); }
-.header-action svg { width: 17px; height: 17px; }
-.header-action span:last-child, .text-link span, .trust-link span { color: var(--accent); }
+.site-header nav a:hover, .site-footer a:hover { color: var(--ink); }
+.header-action { justify-self: end; min-height: 42px; display: inline-flex; align-items: center; gap: 9px; padding: 0 12px; border: 1px solid var(--accent); background: var(--accent); color: #fff; font-size: 13px; font-weight: 600; }
+.site-header .header-action:hover { background: #2c6532; color: #fff; }
+.header-action svg { width: 16px; height: 16px; }
+.star-count { margin-left: 2px; padding-left: 9px; border-left: 1px solid rgb(255 255 255 / 45%); font-variant-numeric: tabular-nums; }
 
 .hero {
   min-height: 0;
@@ -69,12 +70,7 @@ h1, h2, h3, p { margin-top: 0; }
 .hero-lede { max-width: 42ch; margin-bottom: 30px; color: var(--muted); font-size: clamp(17px, 1.45vw, 20px); }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; }
 .button { min-height: 50px; display: inline-flex; align-items: center; gap: 14px; padding: 0 19px; background: var(--accent); color: var(--accent-ink); font-size: 14px; font-weight: 600; transition: background 160ms ease; }
-.button svg { width: 16px; height: 16px; }
 .button:hover, .detail-button:hover { background: #2c6532; }
-.github-link { display: inline-flex; align-items: center; gap: 9px; color: var(--muted); font-size: 14px; transition: color 160ms ease; }
-.github-link:hover { color: var(--ink); }
-.github-link svg { width: 17px; height: 17px; }
-.github-link .external-mark { color: var(--accent); }
 .hero-note { margin: 22px 0 0; color: var(--quiet); font-size: 13px; }
 .hero-visual { position: relative; width: 100%; max-width: 510px; justify-self: end; padding: 0; background: transparent; }
 .quality-title { display: flex; align-items: center; gap: 14px; padding: 0 0 12px; }
@@ -109,8 +105,6 @@ h1, h2, h3, p { margin-top: 0; }
 .skill-option-copy { display: grid; gap: 3px; }
 .skill-name { font-size: 15px; font-weight: 550; letter-spacing: -0.02em; }
 .skill-description { max-width: 40ch; color: var(--muted); font-size: 12px; line-height: 1.4; }
-.skill-arrow { color: var(--quiet); text-align: right; transition: color 160ms ease, transform 160ms ease; }
-.skill-option.is-active .skill-arrow { color: var(--accent); transform: translate(2px, -2px); }
 .skill-detail { min-height: 548px; display: flex; flex-direction: column; align-items: flex-start; padding: clamp(30px, 4vw, 55px); background: #f7f6f0; animation: detail-in 220ms ease both; }
 @keyframes detail-in { from { opacity: 0.65; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
 .detail-topline { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; color: var(--muted); font-size: 12px; }
@@ -148,10 +142,10 @@ h1, h2, h3, p { margin-top: 0; }
 .install-method { margin: 0 0 24px; color: var(--muted); font-size: 14px; }
 .install-command { display: grid; gap: 8px; margin-top: 19px; }
 .install-command > span, .install-updates h4 { margin: 0; color: var(--muted); font-size: 12px; font-weight: 600; }
-.copy-code { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 38px; align-items: stretch; gap: 6px; min-width: 0; }
-.copy-code code { display: block; min-width: 0; padding: 12px 14px; background: #eeece4; color: #343b32; font-size: 13px; line-height: 1.55; overflow-wrap: anywhere; white-space: normal; }
-.copy-button { display: grid; width: 38px; min-height: 40px; place-items: center; align-self: start; padding: 0; border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; }
-.copy-button:hover { border-color: var(--accent); color: var(--accent); }
+.copy-code { position: relative; display: block; min-width: 0; }
+.copy-code code { display: block; min-width: 0; min-height: 46px; padding: 12px 60px 12px 14px; background: #eeece4; color: #343b32; font-size: 13px; line-height: 1.55; overflow-wrap: anywhere; white-space: normal; }
+.copy-button { position: absolute; top: 50%; right: 2px; display: grid; width: 42px; height: 42px; min-height: 42px; place-items: center; padding: 0; border: 0; background: transparent; color: var(--muted); cursor: pointer; transform: translateY(-50%); }
+.copy-button:hover { background: #e3eee0; color: var(--accent); }
 .copy-button svg { width: 17px; height: 17px; }
 .copy-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); }
 .install-note { margin: 17px 0 0; color: var(--muted); font-size: 13px; }
@@ -160,13 +154,11 @@ h1, h2, h3, p { margin-top: 0; }
 .repo-link { display: inline-flex; align-items: center; gap: 10px; margin-top: 22px; color: var(--muted); font-size: 13px; }
 .repo-link:hover { color: var(--ink); }
 .repo-link svg { width: 17px; height: 17px; }
-.repo-link span { color: var(--accent); }
 
-.trust-section { display: grid; grid-template-columns: 56px 1fr auto; align-items: start; gap: 24px; padding-top: 43px; padding-bottom: 100px; }
-.trust-mark { display: grid; width: 40px; height: 40px; place-items: center; background: #e3eee0; color: var(--accent); font-size: 19px; }
+.trust-section { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 24px; padding-top: 43px; padding-bottom: 100px; }
 .trust-copy h2 { margin-bottom: 11px; font-size: clamp(23px, 2.5vw, 32px); }
 .trust-copy p { max-width: 65ch; margin: 0; color: var(--muted); font-size: 14px; }
-.trust-link { margin-top: 8px; color: var(--ink); }
+.trust-link { margin-top: 8px; color: var(--ink); text-decoration: underline; text-decoration-color: #a7b39f; text-underline-offset: 4px; }
 
 .document-page { min-height: 73vh; padding-top: clamp(70px, 10vw, 145px); padding-bottom: 130px; }
 .document-heading { display: grid; grid-template-columns: 0.9fr 1fr; gap: 10vw; align-items: end; margin-bottom: 95px; }
@@ -200,7 +192,7 @@ h1, h2, h3, p { margin-top: 0; }
   .skills-section { padding-top: 42px; padding-bottom: 100px; }
   .section-intro { grid-template-columns: 1fr; gap: 18px; margin-bottom: 32px; }
   .skill-explorer { grid-template-columns: minmax(250px, 0.9fr) minmax(300px, 1.1fr); }
-  .skill-option { grid-template-columns: 32px 1fr 15px; gap: 9px; padding-inline: 10px; }
+  .skill-option { grid-template-columns: 32px 1fr; gap: 9px; padding-inline: 10px; }
   .skill-icon { width: 30px; height: 30px; }
   .skill-icon svg { width: 17px; height: 17px; }
   .skill-name { font-size: 14px; }
@@ -210,8 +202,6 @@ h1, h2, h3, p { margin-top: 0; }
   .workflow { grid-template-columns: 1fr; gap: 45px; padding-block: 78px; }
   .install-section { padding-block: 85px; }
   .install-options { grid-template-columns: 1fr; gap: 42px; margin-top: 36px; }
-  .trust-section { grid-template-columns: 45px 1fr; }
-  .trust-link { grid-column: 2; }
   .document-page { padding-top: 75px; padding-bottom: 80px; }
   .document-heading { gap: 22px; margin-bottom: 60px; }
   .site-footer { grid-template-columns: 1fr auto; }
@@ -223,8 +213,8 @@ h1, h2, h3, p { margin-top: 0; }
   .site-header { min-height: 70px; gap: 8px 10px; }
   .wordmark { font-size: 13px; }
   .wordmark img { width: 26px; height: 26px; }
-  .header-action { gap: 6px; font-size: 12px; }
-  .header-action svg { width: 16px; height: 16px; }
+  .header-action { gap: 6px; padding-inline: 9px; font-size: 12px; }
+  .star-count { padding-left: 7px; }
   .hero { gap: 27px; padding-top: 32px; padding-bottom: 55px; }
   .hero h1 { max-width: 9ch; font-size: clamp(54px, 14vw, 70px); }
   .hero-lede { font-size: 17px; }
@@ -247,7 +237,6 @@ h1, h2, h3, p { margin-top: 0; }
   .skill-option-copy { min-width: 0; }
   .skill-name { font-size: 12px; line-height: 1.25; }
   .skill-description { display: none; }
-  .skill-arrow { display: none; }
   .skill-detail { min-height: 0; padding: 27px 22px; }
   .skill-detail h3 { font-size: 36px; }
   .skill-detail > p { font-size: 14px; }
@@ -259,9 +248,8 @@ h1, h2, h3, p { margin-top: 0; }
   .flow-item strong { font-size: 12px; }
   .flow-item span { font-size: 11px; }
   .install-section { padding-block: 70px; }
-  .install-panel code { padding: 12px; font-size: 12px; }
-  .trust-section { grid-template-columns: 34px 1fr; gap: 13px; padding-bottom: 75px; }
-  .trust-mark { width: 32px; height: 32px; }
+  .install-panel .copy-code code { padding: 12px 58px 12px 12px; font-size: 12px; }
+  .trust-section { grid-template-columns: 1fr; gap: 13px; padding-bottom: 75px; }
   .trust-copy h2 { font-size: 25px; }
   .trust-copy p { font-size: 13px; }
   .trust-link { font-size: 13px; }
@@ -276,8 +264,15 @@ h1, h2, h3, p { margin-top: 0; }
   .site-footer > span:last-child { grid-column: auto; }
 }
 
+@media (max-width: 360px) {
+  .site-header { grid-template-columns: 1fr auto; }
+  .site-header .wordmark { grid-column: 1 / -1; grid-row: 1; }
+  .site-header .header-action { grid-column: 1; grid-row: 2; justify-self: start; }
+  .site-header nav { grid-column: 1 / -1; grid-row: 3; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; }
   .skill-detail { animation: none; }
-  .site-header nav a, .site-footer a, .header-action, .button, .github-link, .skill-option, .skill-arrow, .detail-button { transition: none; }
+  .site-header nav a, .site-footer a, .header-action, .button, .skill-option, .detail-button { transition: none; }
 }

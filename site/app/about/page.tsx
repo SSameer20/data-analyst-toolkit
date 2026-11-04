@@ -21,7 +21,7 @@ export default function AboutPage() {
         <section>
           <h2>Open source</h2>
           <p>The project is distributed under the MIT License. Contributions and corrections are welcome on GitHub.</p>
-          <a className="text-link" href="https://github.com/SSameer20/data-analyst-toolkit">Explore the project <span aria-hidden="true">↗</span></a>
+          <a className="text-link" href="https://github.com/SSameer20/data-analyst-toolkit">Explore the project</a>
         </section>
       </div>
     </main>

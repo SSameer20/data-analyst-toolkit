@@ -1,9 +1,5 @@
-import SkillExplorer, { GitHubLink } from "./components/skill-explorer";
+import SkillExplorer from "./components/skill-explorer";
 import CopyCode from "./components/copy-code";
-
-function ArrowIcon() {
-  return <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>;
-}
 
 export default function Home() {
   return (
@@ -13,8 +9,7 @@ export default function Home() {
           <h1>Clearer analysis.</h1>
           <p className="hero-lede">Six focused skills for the work behind trustworthy data.</p>
           <div className="hero-actions">
-            <a className="button" href="#skills">Browse skills <ArrowIcon /></a>
-            <GitHubLink compact />
+            <a className="button" href="#skills">Browse skills</a>
           </div>
           <p className="hero-note">Reusable guidance for your AI workspace.</p>
         </div>
@@ -57,7 +52,7 @@ export default function Home() {
           <div className="workflow-copy">
             <h2>Keep the whole analysis connected.</h2>
             <p>The workflow skill routes each phase to a specialist and carries decisions forward, from the first data checks to the final report.</p>
-            <a className="light-link" href="https://github.com/SSameer20/data-analyst-toolkit/tree/main/skills/data-analyst-workflow">Explore the workflow skill <span aria-hidden="true">↗</span></a>
+            <a className="light-link" href="https://github.com/SSameer20/data-analyst-toolkit/tree/main/skills/data-analyst-workflow">Explore the workflow skill</a>
           </div>
           <div className="flow-graphic" role="list" aria-label="Analysis phases">
             <div className="flow-line" aria-hidden="true"><i/><i/><i/><i/></div>
@@ -95,14 +90,13 @@ export default function Home() {
           </section>
         </div>
         <div className="install-resource">
-          <a href="https://github.com/SSameer20/data-analyst-toolkit" className="repo-link"><GitHubMark />Browse the repository <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/SSameer20/data-analyst-toolkit" className="repo-link"><GitHubMark />Browse the repository</a>
         </div>
       </section>
 
       <section className="trust-section wrap">
-        <div className="trust-mark" aria-hidden="true">↗</div>
         <div className="trust-copy"><h2>Made to support your judgment.</h2><p>The skills don’t connect to databases or change source data. Review generated queries, formulas, and reports before using them.</p></div>
-        <a className="trust-link" href="/about">Learn about the toolkit <span aria-hidden="true">↗</span></a>
+        <a className="trust-link" href="/about">Learn about the toolkit</a>
       </section>
     </main>
   );

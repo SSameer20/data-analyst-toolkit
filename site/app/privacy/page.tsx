@@ -23,7 +23,7 @@ export default function PrivacyPage() {
         <section>
           <h2>Questions</h2>
           <p>For questions about privacy or the project, contact the maintainer.</p>
-          <a className="text-link" href="mailto:sameer.kattubadi@gmail.com?subject=Privacy%20question">Email the maintainer <span aria-hidden="true">↗</span></a>
+          <a className="text-link" href="mailto:sameer.kattubadi@gmail.com?subject=Privacy%20question">Email the maintainer</a>
         </section>
       </div>
     </main>
