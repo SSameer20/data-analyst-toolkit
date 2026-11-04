@@ -1,80 +1,79 @@
-const skills = [
-  ["Data Analyst Workflow", "Coordinate a complete analysis from the first question to a clear deliverable."],
-  ["Data Quality", "Define checks, measure defects, and decide what to fix first."],
-  ["Data Cleaning", "Plan repeatable transformations and validate the result."],
-  ["Feature Engineering", "Create useful analytical features while guarding against leakage."],
-  ["SQL Expert", "Write, explain, tune, and debug SQL. Oracle is the default dialect."],
-  ["BI Expert", "Plan dashboards and reports across Tableau, Power BI, Looker, Qlik, and spreadsheets."],
-];
+import SkillExplorer, { GitHubLink } from "./components/skill-explorer";
+
+function ArrowIcon() {
+  return <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>;
+}
 
 export default function Home() {
   return (
     <main>
       <section className="hero wrap">
         <div className="hero-copy">
-          <p className="brand-mark">Data Analyst Toolkit</p>
-          <h1>Better analysis, one skill at a time.</h1>
-          <p className="hero-lede">A collection of reusable skills for data quality, cleaning, SQL, feature engineering, and BI reporting.</p>
+          <h1>Clearer analysis.</h1>
+          <p className="hero-lede">Six focused skills for the work behind trustworthy data: quality, cleaning, SQL, feature engineering, and BI reporting.</p>
           <div className="hero-actions">
-            <a className="button" href="#install">Install skills</a>
-            <a className="text-link" href="#skills">Explore the skills <span aria-hidden="true">↘</span></a>
+            <a className="button" href="#skills">Browse skills <ArrowIcon /></a>
+            <GitHubLink compact />
           </div>
+          <p className="hero-note">Reusable guidance for your AI workspace.</p>
         </div>
-        <div className="demo" data-ui aria-label="Example data quality analysis">
-          <div className="demo-head"><span>Data quality</span><span>Validation rules</span></div>
-          <div className="demo-row"><span>Customer ID</span><span className="demo-pass">Unique · 100%</span></div>
-          <div className="demo-row"><span>Order date</span><span className="demo-warn">12 missing values</span></div>
-          <div className="demo-row"><span>Net revenue</span><span className="demo-pass">No negative values</span></div>
-          <p className="demo-note">Next: review missing dates before reporting.</p>
+        <div className="hero-visual" data-ui aria-label="Example quality review">
+          <div className="visual-label"><span>Example output</span><span>Quality review</span></div>
+          <div className="quality-title"><span className="quality-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><div><strong>Customer records</strong><span>Validation summary</span></div></div>
+          <div className="quality-row"><span>Unique customer ID</span><span className="status status-good">Passed</span></div>
+          <div className="quality-row"><span>Required order date</span><span className="status status-review">Review</span></div>
+          <div className="quality-row"><span>Revenue range</span><span className="status status-good">Passed</span></div>
+          <div className="quality-foot"><span className="quality-bar"><i /></span><span>Review exceptions before reporting</span></div>
+          <span className="visual-side-note">A practical review starts with a clear rule.</span>
         </div>
       </section>
 
       <section className="skills-section wrap" id="skills">
         <div className="section-intro">
-          <h2>Six skills. One toolkit.</h2>
-          <p>Start with a specialist task or use the workflow skill to coordinate the full analysis.</p>
+          <div><h2>One toolkit. Six ways in.</h2></div>
+          <p>Choose a skill to see what it covers, how it fits, and how to install it on its own.</p>
         </div>
-        <ol className="skill-list">
-          {skills.map(([name, description]) => (
-            <li key={name}>
-              <a href={`https://github.com/SSameer20/data-analyst-toolkit/tree/main/skills/${name.toLowerCase().replaceAll(" ", "-")}`}>
-                <span className="skill-name">{name}</span>
-                <span className="skill-description">{description}</span>
-                <span className="skill-arrow" aria-hidden="true">↗</span>
-              </a>
-            </li>
-          ))}
-        </ol>
+        <SkillExplorer />
       </section>
 
       <section className="workflow-section">
         <div className="workflow wrap">
-          <div>
-            <h2>From question to useful report.</h2>
-            <p>The workflow skill helps organize the work. Bring your context, choose the analysis steps, and review the output before using it.</p>
+          <div className="workflow-copy">
+            <h2>Keep the whole analysis connected.</h2>
+            <p>The workflow skill routes each phase to a specialist and carries decisions forward, from the first data checks to the final report.</p>
+            <a className="light-link" href="https://github.com/SSameer20/data-analyst-toolkit/tree/main/skills/data-analyst-workflow">Explore the workflow skill <span aria-hidden="true">↗</span></a>
           </div>
-          <div className="workflow-steps" aria-label="Analysis workflow">
-            <span>Frame the question</span><span>Check the data</span><span>Analyze with care</span><span>Share the result</span>
+          <div className="flow-graphic" aria-label="Analysis phases">
+            <div className="flow-line" aria-hidden="true"><i/><i/><i/><i/></div>
+            <div className="flow-item"><span>Understand</span><strong>Frame the question</strong></div>
+            <div className="flow-item"><span>Prepare</span><strong>Check and clean</strong></div>
+            <div className="flow-item"><span>Analyze</span><strong>Query and engineer</strong></div>
+            <div className="flow-item"><span>Communicate</span><strong>Report with context</strong></div>
           </div>
         </div>
       </section>
 
       <section className="install-section wrap" id="install">
-        <div>
-          <h2>Install the toolkit</h2>
-          <p>Add the skills to a compatible agent setup, or install one specialist skill on its own.</p>
+        <div className="install-copy">
+          <h2>Bring the skills to your workflow.</h2>
+          <p>Install the full toolkit, or add just the specialist you need. It’s open source under the MIT License.</p>
         </div>
-        <div className="install-content">
-          <code>npx skills add https://github.com/SSameer20/data-analyst-toolkit</code>
-          <a className="text-link" href="https://github.com/SSameer20/data-analyst-toolkit">View repository <span aria-hidden="true">↗</span></a>
+        <div className="install-panel">
+          <div className="install-panel-head"><span>Install all skills</span><span className="terminal-mark" aria-hidden="true">&gt;_</span></div>
+          <code><span>$</span> npx skills add<br/> &nbsp; https://github.com/SSameer20/<br/> &nbsp; data-analyst-toolkit</code>
+          <a href="https://github.com/SSameer20/data-analyst-toolkit" className="repo-link"><GitHubMark />Browse the repository <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
-      <section className="limits-section wrap">
-        <h2>Designed for review.</h2>
-        <p>The skills do not connect to databases or inspect live BI workspaces. They do not modify source datasets. Review generated queries, formulas, and reports before putting them to use.</p>
-        <a className="text-link" href="/about">How the toolkit works <span aria-hidden="true">↗</span></a>
+      <section className="trust-section wrap">
+        <div className="trust-mark" aria-hidden="true">↗</div>
+        <div className="trust-copy"><h2>Made to support your judgment.</h2><p>The skills don’t connect to databases or change source data. Review generated queries, formulas, and reports before using them.</p></div>
+        <a className="trust-link" href="/about">Learn about the toolkit <span aria-hidden="true">↗</span></a>
       </section>
     </main>
   );
+}
+
+function GitHubMark() {
+  return <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.68-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.7.08-.69.08-.69 1.12.08 1.71 1.15 1.71 1.15 1 .1.1.8 2.02 1.43.22-.73.58-1.22 1.05-1.5-2.47-.28-5.06-1.24-5.06-5.5 0-1.22.44-2.22 1.15-3-.12-.29-.5-1.43.11-2.97 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.97.72.78 1.15 1.78 1.15 3 0 4.27-2.6 5.21-5.08 5.49.6.52 1.13 1.53 1.13 3.08v2.28c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg>;
 }
