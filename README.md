@@ -38,7 +38,9 @@
   <a href="https://github.com/SSameer20/data-analyst-plugin/network/members"><img src="https://img.shields.io/github/forks/SSameer20/data-analyst-plugin.svg?style=for-the-badge" alt="Forks"></a>
   <a href="https://github.com/SSameer20/data-analyst-plugin/stargazers"><img src="https://img.shields.io/github/stars/SSameer20/data-analyst-plugin.svg?style=for-the-badge" alt="Stargazers"></a>
   <a href="https://github.com/SSameer20/data-analyst-plugin/issues"><img src="https://img.shields.io/github/issues/SSameer20/data-analyst-plugin.svg?style=for-the-badge" alt="Issues"></a>
-  <a href="https://ssameer20.github.io/data-analyst-plugin/"><img src="https://img.shields.io/website?style=for-the-badge&amp;url=https%3A%2F%2Fssameer20.github.io%2Fdata-analyst-toolkit%2F" alt="Website"></a>
+  <a href="https://data-analyst-toolkit.sameerdev.website/">
+  <img src="https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fdata-analyst-toolkit.sameerdev.website%2F" alt="Website">
+</a>
 </p>
 
 ## About
