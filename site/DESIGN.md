@@ -21,7 +21,8 @@ Typography uses a clear sans-serif system stack. Headings are compact and high c
 
 ## Components and behavior
 
-- The header keeps Skills, Install, and GitHub available across viewports; About, Support, and Privacy remain in the footer.
+- The header keeps Skills, Install, and GitHub available across viewports; About, Changelog, Support, and Privacy remain in the footer.
+- The changelog page is generated at build time from the root `CHANGELOG.md`; never edit entries in the site.
 - Installation guidance is split into Claude Code and Codex sections with platform-specific commands.
 - The header GitHub action links to the repository and retrieves its current star count from GitHub's public repository API.
 - Every command snippet has a clipboard button with copied and failure announcements.

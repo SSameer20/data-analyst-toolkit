@@ -21,7 +21,7 @@ export function SiteFooter() {
   return (
     <footer className="site-footer wrap">
       <span>Practical guidance for data analysis.</span>
-      <div><a href="/about">About</a><a href="/support">Support</a><a href="/privacy">Privacy</a></div>
+      <div><a href="/about">About</a><a href="/changelog">Changelog</a><a href="/support">Support</a><a href="/privacy">Privacy</a></div>
       <span>Data Analyst Toolkit</span>
     </footer>
   );

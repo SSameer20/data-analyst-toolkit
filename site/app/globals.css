@@ -178,6 +178,11 @@ h1, h2, h3, p { margin-top: 0; }
 
 .text-link { color: var(--ink); text-decoration: underline; text-decoration-color: #a7b39f; text-underline-offset: 4px; }
 
+.changelog-entries { display: grid; gap: 34px; margin: 0; padding: 0; list-style: none; }
+.changelog-entries h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; letter-spacing: -0.01em; overflow-wrap: anywhere; }
+.document-body .changelog-entries p { margin-bottom: 8px; }
+.document-body .changelog-meta { display: flex; flex-wrap: wrap; gap: 4px 20px; margin-bottom: 0; color: var(--quiet); font-size: 14px; }
+
 @media (max-width: 850px) {
   :root { --margin: 22px; }
   .site-header { grid-template-columns: 1fr auto; gap: 8px 20px; padding-block: 12px; }
