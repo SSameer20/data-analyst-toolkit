@@ -34,4 +34,4 @@ jobs:
           delete-branch: true
           commit-message: "docs: nightly changelog update"
           title: "docs: update changelog (nightly catch-up)"
-          body: "Automatically adds recently merged pull requests missing from CHANGELOG.md."
+          body: "Automatically adds recently merged pull requests and direct commits to main missing from CHANGELOG.md."

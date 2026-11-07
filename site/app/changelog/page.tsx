@@ -4,7 +4,7 @@ import { parseChangelog } from "./parse-changelog";
 
 export const metadata = {
   title: "Changelog — Data Analyst Toolkit",
-  description: "Every merged pull request to the Data Analyst Toolkit, with its summary and authors.",
+  description: "What changed in the Data Analyst Toolkit, when, and who worked on it.",
 };
 
 // Read at build time from the single source of truth at the repository root.
@@ -14,7 +14,9 @@ const REPO_URL = "https://github.com/SSameer20/data-analyst-toolkit";
 
 function sourceLabel(url: string) {
   const pullRequest = url.match(/\/pull\/(\d+)/);
-  return pullRequest ? `Pull request #${pullRequest[1]}` : "View source";
+  if (pullRequest) return `Pull request #${pullRequest[1]}`;
+  const commit = url.match(/\/commit\/([0-9a-f]{7})/);
+  return commit ? `Commit ${commit[1]}` : "View source";
 }
 
 function Authors({ value }: { value: string }) {
@@ -32,7 +34,7 @@ export default function ChangelogPage() {
     <main className="document-page wrap">
       <div className="document-heading">
         <h1>Changelog</h1>
-        <p>Every merged pull request, in the open: what changed, when, and who worked on it.</p>
+        <p>What changed, when, and who worked on it, in the open.</p>
       </div>
       <div className="document-body">
         {days.map((day) => (
@@ -56,7 +58,7 @@ export default function ChangelogPage() {
         ))}
         <section>
           <h2>Full history</h2>
-          <p>Dates are UTC. Changes pushed directly without a pull request are not listed here; the commit history has everything.</p>
+          <p>Dates are UTC. Pull requests are recorded on merge, and direct commits to main are added by a nightly job. Merge commits are left out, so the commit history is the complete record.</p>
           <a className="text-link" href={`${REPO_URL}/commits/main`}>See all commits</a>
         </section>
       </div>

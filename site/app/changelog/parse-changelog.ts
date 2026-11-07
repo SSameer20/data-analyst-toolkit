@@ -17,6 +17,11 @@ const FIELDS = {
   "**Authors participated:**": "authors",
 } as const;
 
+// Reverses escape_markdown() in update-changelog.py; React escapes output itself.
+function unescapeMarkdown(text: string) {
+  return text.replace(/\\([\\`*_{}[\]()#+|<>])/g, "$1");
+}
+
 /**
  * Parses the format written by .github/scripts/update-changelog.py.
  * Unrecognized lines throw, so a format change fails the build (keeping the
@@ -61,7 +66,7 @@ export function parseChangelog(markdown: string): ChangelogDay[] {
         }
         const entry = day.entries.at(-1);
         if (entry) {
-          entry[field] = line.slice(prefix.length).trim();
+          entry[field] = unescapeMarkdown(line.slice(prefix.length).trim());
           return;
         }
       }
@@ -69,7 +74,7 @@ export function parseChangelog(markdown: string): ChangelogDay[] {
       // Indented text continues the previous field, such as a wrapped summary.
       const entry = day?.entries.at(-1);
       if (entry && field && /^\s/.test(rawLine)) {
-        entry[field] = `${entry[field]} ${line}`;
+        entry[field] = `${entry[field]} ${unescapeMarkdown(line)}`;
         return;
       }
 

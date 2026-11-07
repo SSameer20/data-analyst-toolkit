@@ -6,11 +6,15 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
 
+from changelog_entries import escape_markdown, insert_entry
+
 
 def short_description(body: str, title: str) -> str:
     for line in body.splitlines():
         line = line.strip()
         if not line or line.startswith("#") or line.startswith("<!--"):
+            continue
+        if re.match(r"^[A-Za-z-]+-by:\s", line, re.IGNORECASE):
             continue
         line = re.sub(r"^(?:[-*+]|\d+\.)\s+", "", line)
         if re.match(r"^\[[ xX]\]\s+", line):
@@ -47,7 +51,8 @@ def pull_request_usernames(repository: str, number: int, token: str) -> tuple[li
                 else:
                     has_unlinked_identity = True
             for username in linked_users:
-                if username not in usernames:
+                # web-flow is GitHub's committer for web merges, not a participant.
+                if username != "web-flow" and username not in usernames:
                     usernames.append(username)
 
         if len(commits) < 100:
@@ -55,10 +60,6 @@ def pull_request_usernames(repository: str, number: int, token: str) -> tuple[li
         page += 1
 
     return usernames, has_unlinked_identity
-
-
-def escape_markdown(text: str) -> str:
-    return re.sub(r"([\\`*_{}\[\]()#+|<>])", r"\\\1", text)
 
 
 def main() -> None:
@@ -98,31 +99,7 @@ def main() -> None:
             "to a GitHub username)"
         )
 
-    entry = (
-        f"<!-- changelog-source: {url} -->\n"
-        f"- **Title:** {title}\n"
-        f"  **Summary:** {description}\n"
-        f"  **Authors participated:** {participants}\n\n"
-    )
-    lines = changelog.splitlines(keepends=True)
-    marker = "<!-- changelog entries -->"
-    marker_index = next(
-        (index for index, line in enumerate(lines) if line.strip() == marker),
-        None,
-    )
-    if marker_index is None:
-        raise ValueError(f"{changelog_path} is missing the {marker} marker")
-
-    date_heading = f"## {date}"
-    date_index = next(
-        (index for index, line in enumerate(lines) if line.strip() == date_heading),
-        None,
-    )
-    if date_index is None:
-        lines.insert(marker_index + 1, f"\n{date_heading}\n\n{entry}")
-    else:
-        lines.insert(date_index + 2, entry)
-    changelog_path.write_text("".join(lines), encoding="utf-8")
+    insert_entry(changelog_path, date, url, title, description, participants)
 
 
 if __name__ == "__main__":
