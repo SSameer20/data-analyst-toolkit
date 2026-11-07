@@ -111,15 +111,6 @@ codex plugin add data-analyst-toolkit@data-analyst-toolkit
 
 Codex scans `~/.agents/skills/` for user skills. If the new skills do not appear, restart Codex.
 
-## Repository layout
-
-```text
-.
-├── .claude-plugin/  # Claude Code plugin and marketplace manifests
-├── assets/          # Plugin icon
-├── site/            # Public website, privacy, terms, and support pages
-└── skills/          # Reusable skill instructions
-```
 
 ## Contributing
 
