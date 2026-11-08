@@ -6,6 +6,21 @@ Entries are grouped by UTC date and include the title, a short summary, and part
 
 ## 2026-11-07
 
+<!-- changelog-source: https://github.com/SSameer20/data-analyst-toolkit/commit/e20d62e58155c762d8bdf0df01f33c73496937e3 -->
+- **Title:** feat\(demo-output\): add demo output video file
+  **Summary:** feat\(demo-output\): add demo output video file
+  **Authors participated:** @SSameer20
+
+<!-- changelog-source: https://github.com/SSameer20/data-analyst-toolkit/commit/06da94bc3be6bedf0fb23c91612af8602170eb47 -->
+- **Title:** feat\(demo-output\): add demo output video file
+  **Summary:** feat\(demo-output\): add demo output video file
+  **Authors participated:** @SSameer20
+
+<!-- changelog-source: https://github.com/SSameer20/data-analyst-toolkit/commit/7b7264ab8fd41087fa55dedf87144e7e75402d7f -->
+- **Title:** feat\(changelog\): enhance changelog parsing and update page descriptions
+  **Summary:** feat\(changelog\): enhance changelog parsing and update page descriptions
+  **Authors participated:** @SSameer20
+
 <!-- changelog-source: https://github.com/SSameer20/data-analyst-toolkit/commit/f331259cd44bd93cab7db245fa19d11ab0033728 -->
 - **Title:** Add changelog page to the website
   **Summary:** Added a public changelog page generated from this file, with a link in the site footer.
