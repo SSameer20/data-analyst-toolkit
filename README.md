@@ -137,3 +137,5 @@ For questions or support, email [sameer.kattubadi@gmail.com](mailto:sameer.kattu
 [issues-url]: https://github.com/SSameer20/data-analyst-plugin/issues
 [website-shield]: https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fssameer20.github.io%2Fdata-analyst-plugin%2F
 [website-url]: https://data-analyst-toolkit.sameerdev.website/
+
+<!-- Path filter test: safe to close without merging. -->
