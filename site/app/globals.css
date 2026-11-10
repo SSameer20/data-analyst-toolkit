@@ -299,3 +299,8 @@ h1, h2, h3, p { margin-top: 0; }
   .document-body section { grid-template-columns: 1fr; gap: 12px; }
   .document-body section > :nth-child(n+2), .document-body section > h2 + p, .document-body section > h2 + ul { grid-column: 1; grid-row: auto; }
 }
+.code-block { padding: 16px; background: rgba(0,0,0,.05); border-radius: 6px; overflow-x: auto; white-space: pre; font: 13px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--ink); max-width: 100%; }
+.document-body section > div { grid-column: 2; min-width: 0; }
+.quick-answer p { color: var(--ink); font-size: 18px; }
+.post-heading h1 { max-width: 18ch; font-size: clamp(36px, 5vw, 64px); }
+@media (max-width: 720px) { .document-body section > div { grid-column: 1; } }
