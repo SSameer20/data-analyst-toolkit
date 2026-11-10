@@ -3,7 +3,9 @@ import { join } from "node:path";
 import { parseChangelog } from "./parse-changelog";
 
 export const metadata = {
-  title: "Changelog — Data Analyst Toolkit",
+  title: "Changelog",
+  alternates: { canonical: "/changelog" },
+  openGraph: { url: "/changelog" },
   description: "What changed in the Data Analyst Toolkit, when, and who worked on it.",
 };
 

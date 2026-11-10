@@ -1,4 +1,9 @@
-export const metadata = { title: "Privacy — Data Analyst Toolkit" };
+export const metadata = {
+  title: "Privacy",
+  description: "How Data Analyst Toolkit handles your data: the skills do not connect to databases or modify source data, and sensitive data guidance.",
+  alternates: { canonical: "/privacy" },
+  openGraph: { url: "/privacy" },
+};
 
 export default function PrivacyPage() {
   return (

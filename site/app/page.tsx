@@ -1,34 +1,52 @@
+import Link from "next/link";
+import { JsonLd } from "./lib/json-ld";
+import { REPOSITORY, SITE_URL } from "./lib/skills";
 import SkillExplorer from "./components/skill-explorer";
 import CopyCode from "./components/copy-code";
 
 export default function Home() {
   return (
     <main>
+      <JsonLd data={{
+        "@context": "https://schema.org",
+        "@graph": [
+          { "@type": "WebSite", name: "Data Analyst Toolkit", url: `${SITE_URL}/` },
+          {
+            "@type": "SoftwareSourceCode",
+            name: "Data Analyst Toolkit",
+            description: "A collection of reusable AI-agent skills for data quality, data cleaning, feature engineering, SQL, and business-intelligence reporting workflows.",
+            codeRepository: REPOSITORY,
+            license: "https://opensource.org/licenses/MIT",
+            url: `${SITE_URL}/`,
+          },
+        ],
+      }} />
       <section className="hero wrap">
         <div className="hero-copy">
-          <h1>Clearer analysis.</h1>
-          <p className="hero-lede">Six focused skills for the work behind trustworthy data.</p>
+          <h1>Practical AI agent skills for data analysts.</h1>
+          <p className="hero-lede">Data Analyst Toolkit is a collection of reusable agent skills for common data-analysis workflows: assess data quality, plan data cleaning, engineer features, write SQL, and prepare BI reporting for Tableau, Power BI, Looker, Qlik, Excel, and Google Sheets.</p>
           <div className="hero-actions">
-            <a className="button" href="#skills">Browse skills</a>
+            <Link className="button" href="/skills">Explore the skills</Link>
+            <a className="text-link" href="https://github.com/SSameer20/data-analyst-toolkit">View on GitHub</a>
           </div>
-          <p className="hero-note">Reusable guidance for your AI workspace.</p>
+          <p className="hero-note">Open source. Works in Claude Code, Codex, and other agent environments that support skills.</p>
         </div>
         <nav className="atlas-route" aria-label="Analysis route and toolkit skills">
           <div className="atlas-stage">
             <h2>Understand</h2>
-            <ul><li><a href="#skills">Data Analyst Workflow</a></li></ul>
+            <ul><li><Link href="/skills/data-analyst-workflow">Data Analyst Workflow</Link></li></ul>
           </div>
           <div className="atlas-stage">
             <h2>Prepare</h2>
-            <ul><li><a href="#skills">Data Quality</a></li><li><a href="#skills">Data Cleaning</a></li></ul>
+            <ul><li><Link href="/skills/data-quality">Data Quality</Link></li><li><Link href="/skills/data-cleaning">Data Cleaning</Link></li></ul>
           </div>
           <div className="atlas-stage">
             <h2>Analyze</h2>
-            <ul><li><a href="#skills">Feature Engineering</a></li><li><a href="#skills">SQL Expert</a></li></ul>
+            <ul><li><Link href="/skills/feature-engineering">Feature Engineering</Link></li><li><Link href="/skills/sql-expert">SQL Expert</Link></li></ul>
           </div>
           <div className="atlas-stage">
             <h2>Communicate</h2>
-            <ul><li><a href="#skills">BI Expert</a></li></ul>
+            <ul><li><Link href="/skills/bi-expert">BI Expert</Link></li></ul>
           </div>
         </nav>
         <div className="hero-visual" data-ui role="group" aria-labelledby="quality-review-heading">
@@ -41,8 +59,8 @@ export default function Home() {
 
       <section className="skills-section wrap" id="skills">
         <div className="section-intro">
-          <div><h2>One toolkit. Six ways in.</h2></div>
-          <p>Choose a skill to see what it covers, how it fits, and how to install it on its own.</p>
+          <div><h2>Data analysis skills for everyday workflows.</h2></div>
+          <p>Choose a skill to see what it covers, how it fits, and how to install it on its own. Or <Link className="text-link" href="/skills">browse all skills</Link>.</p>
         </div>
         <SkillExplorer />
       </section>
@@ -66,7 +84,7 @@ export default function Home() {
 
       <section className="install-section wrap" id="install">
         <div className="install-copy">
-          <h2>Install the toolkit.</h2>
+          <h2>How to use the toolkit.</h2>
           <p>Choose your agent environment to add the Data Analyst Toolkit plugin.</p>
         </div>
         <div className="install-options">
@@ -96,7 +114,7 @@ export default function Home() {
 
       <section className="trust-section wrap">
         <div className="trust-copy"><h2>Made to support your judgment.</h2><p>The skills don’t connect to databases or change source data. Review generated queries, formulas, and reports before using them.</p></div>
-        <a className="trust-link" href="/about">Learn about the toolkit</a>
+        <Link className="trust-link" href="/about">Learn about the toolkit</Link>
       </section>
     </main>
   );

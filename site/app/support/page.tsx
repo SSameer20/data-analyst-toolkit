@@ -1,4 +1,9 @@
-export const metadata = { title: "Support — Data Analyst Toolkit" };
+export const metadata = {
+  title: "Support",
+  description: "Get help with Data Analyst Toolkit: report issues, ask questions, and suggest improvements to the AI-agent skills for data analysis.",
+  alternates: { canonical: "/support" },
+  openGraph: { url: "/support" },
+};
 
 export default function SupportPage() {
   return (
