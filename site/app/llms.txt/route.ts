@@ -11,7 +11,7 @@ Source code: ${REPOSITORY} (MIT License)
 ## Skills
 ${skills.map((s) => `- [${s.name}](${SITE_URL}/skills/${s.slug}): ${s.short} ${s.detail}`).join("\n")}
 
-## Guides
+## Blog
 ${posts.map((p) => `- [${p.title}](${SITE_URL}/blog/${p.slug}): ${p.question}`).join("\n")}
 
 ## Install

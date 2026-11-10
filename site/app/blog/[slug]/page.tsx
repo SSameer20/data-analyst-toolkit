@@ -56,14 +56,14 @@ export default async function PostPage({ params }: PageProps<"/blog/[slug]">) {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
-              { "@type": "ListItem", position: 2, name: "Guides", item: `${SITE_URL}/blog` },
+              { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
               { "@type": "ListItem", position: 3, name: post.title, item: url },
             ],
           },
         ],
       }} />
       <nav className="breadcrumb" aria-label="Breadcrumb">
-        <ol><li><Link href="/">Home</Link></li><li><Link href="/blog">Guides</Link></li><li aria-current="page">{post.title}</li></ol>
+        <ol><li><Link href="/">Home</Link></li><li><Link href="/blog">Blog</Link></li><li aria-current="page">{post.title}</li></ol>
       </nav>
       <article>
         <header className="document-heading post-heading">
@@ -89,7 +89,7 @@ export default async function PostPage({ params }: PageProps<"/blog/[slug]">) {
             </div>
           </section>
           <section>
-            <h2>More guides</h2>
+            <h2>More from the blog</h2>
             <ul>{more.map((p) => <li key={p.slug}><Link className="text-link" href={`/blog/${p.slug}`}>{p.title}</Link></li>)}</ul>
           </section>
         </div>

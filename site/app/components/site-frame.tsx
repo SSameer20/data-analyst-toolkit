@@ -11,7 +11,7 @@ export function SiteHeader() {
       </Link>
       <nav aria-label="Main navigation">
         <Link href="/skills">Skills</Link>
-        <Link href="/blog">Guides</Link>
+        <Link href="/blog">Blog</Link>
         <Link href="/#install">Install</Link>
       </nav>
       <GitHubStarLink />
@@ -23,7 +23,7 @@ export function SiteFooter() {
   return (
     <footer className="site-footer wrap">
       <span>Practical guidance for data analysis.</span>
-      <div><Link href="/blog">Guides</Link><Link href="/about">About</Link><Link href="/changelog">Changelog</Link><Link href="/support">Support</Link><Link href="/privacy">Privacy</Link></div>
+      <div><Link href="/blog">Blog</Link><Link href="/about">About</Link><Link href="/changelog">Changelog</Link><Link href="/support">Support</Link><Link href="/privacy">Privacy</Link></div>
       <span>Data Analyst Toolkit</span>
     </footer>
   );
