@@ -1,4 +1,9 @@
-export const metadata = { title: "About — Data Analyst Toolkit" };
+export const metadata = {
+  title: "About",
+  description: "About Data Analyst Toolkit: open-source, reusable AI-agent skills for data quality, cleaning, feature engineering, SQL, and BI reporting.",
+  alternates: { canonical: "/about" },
+  openGraph: { url: "/about" },
+};
 
 export default function AboutPage() {
   return (
