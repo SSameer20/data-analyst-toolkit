@@ -4,6 +4,22 @@ Entries are grouped by UTC date and include the title, a short summary, and part
 
 <!-- changelog entries -->
 
+## 2026-11-09
+
+<!-- changelog-source: https://github.com/SSameer20/data-analyst-toolkit/commit/2b505789bef8ece554dc76c2932cc56ad53ab22d -->
+- **Title:** Update Product Hunt badge links in README
+  **Summary:** Update Product Hunt badge links in README
+  **Authors participated:** @SSameer20
+
+
+## 2026-11-10
+
+<!-- changelog-source: https://github.com/SSameer20/data-analyst-toolkit/pull/14 -->
+- **Title:** feat: improve SEO optimization
+  **Summary:** Add targeted keywords, optimize page metadata, and improve content structure to enhance search engine visibility and organic traffic.
+  **Authors participated:** @SSameer20
+
+
 ## 2026-11-07
 
 <!-- changelog-source: https://github.com/SSameer20/data-analyst-toolkit/commit/e20d62e58155c762d8bdf0df01f33c73496937e3 -->
