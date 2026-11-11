@@ -1,60 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import CopyCode from "./copy-code";
 
-const repository = "https://github.com/SSameer20/data-analyst-toolkit";
-
-const skills = [
-  {
-    slug: "data-analyst-workflow",
-    name: "Data Analyst Workflow",
-    short: "Coordinate a complete analysis across the specialist skills.",
-    detail: "Route a broad analysis request through the right specialist steps, then carry assumptions forward into one coherent result.",
-    tasks: ["Assess data quality", "Clean and transform", "Engineer features", "Query and report"],
-    icon: "workflow",
-  },
-  {
-    slug: "data-quality",
-    name: "Data Quality",
-    short: "Measure data defects and prioritize practical fixes.",
-    detail: "Turn quality concerns into measurable checks, explain their reporting impact, and recommend clear next actions.",
-    tasks: ["Define validation rules", "Measure affected rows", "Prioritize by impact", "Recommend remediation"],
-    icon: "quality",
-  },
-  {
-    slug: "data-cleaning",
-    name: "Data Cleaning",
-    short: "Plan reproducible transformations and validate results.",
-    detail: "Profile datasets, choose careful treatments for missing and inconsistent values, and document changes for traceability.",
-    tasks: ["Profile and inspect", "Standardize values", "Preserve source data", "Validate before and after"],
-    icon: "cleaning",
-  },
-  {
-    slug: "feature-engineering",
-    name: "Feature Engineering",
-    short: "Build useful features while guarding against leakage.",
-    detail: "Design reproducible analytical or machine-learning features that match the task, data grain, and prediction timing.",
-    tasks: ["Define feature meaning", "Choose transformations", "Prevent target leakage", "Validate splits and outputs"],
-    icon: "features",
-  },
-  {
-    slug: "sql-expert",
-    name: "SQL Expert",
-    short: "Write, explain, optimize, and debug SQL queries.",
-    detail: "Get dialect-aware SQL guidance, with Oracle SQL as the default and clear assumptions about joins, dates, and aggregation.",
-    tasks: ["Write clear queries", "Debug dialect issues", "Use analytic functions", "Review query performance"],
-    icon: "sql",
-  },
-  {
-    slug: "bi-expert",
-    name: "BI Expert",
-    short: "Plan dashboards and reports for your chosen platform.",
-    detail: "Shape accurate, accessible reporting deliverables across Tableau, Power BI, Looker, Qlik, Excel, and Google Sheets.",
-    tasks: ["Define metrics", "Choose clear visuals", "Plan useful interactions", "Validate the report"],
-    icon: "bi",
-  },
-];
+import { REPOSITORY as repository, skills } from "../lib/skills";
 
 function SkillIcon({ name }: { name: string }) {
   const common = { fill: "none", stroke: "currentColor", strokeWidth: 1.7, strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
@@ -69,6 +19,8 @@ function SkillIcon({ name }: { name: string }) {
 
   return <svg aria-hidden="true" viewBox="0 0 24 24" {...common}>{paths[name]}</svg>;
 }
+
+export { SkillIcon };
 
 export default function SkillExplorer() {
   const [selected, setSelected] = useState(0);
@@ -116,7 +68,8 @@ export default function SkillExplorer() {
         <p>{active.detail}</p>
         <ul>{active.tasks.map((task) => <li key={task}>{task}</li>)}</ul>
         <div className="detail-actions">
-          <a className="detail-button" href={`${repository}/tree/main/skills/${active.slug}`}>Read skill</a>
+          <Link className="detail-button" href={`/skills/${active.slug}`}>{`About ${active.name}`}</Link>
+          <a className="detail-button" href={`${repository}/tree/main/skills/${active.slug}`}>Source on GitHub</a>
           <CopyCode text={`npx skills add SSameer20/data-analyst-toolkit --skill ${active.slug}`} />
         </div>
       </section>

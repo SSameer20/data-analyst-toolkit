@@ -49,6 +49,10 @@ Data Analyst Toolkit is a collection of reusable agent skills for common data-an
 
 The skills do not connect to databases or inspect live BI workspaces. They can create report artifacts when the host environment provides suitable tools; they do not modify source datasets. Review generated queries, formulas, and reports before using them.
 
+<p>
+<a href="https://www.producthunt.com/products/data-analyst-toolkit?utm_source=badge-follow&utm_medium=badge&utm_source=badge-data&#0045;analyst&#0045;toolkit" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=1370814&theme=light" alt="Data&#0032;Analyst&#0032;Toolkit - Data&#0032;Analyst&#0032;Toolkit | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+</p>
+
 ## Skills
 
 | Skill                                                          | What it helps with                                                                  |
